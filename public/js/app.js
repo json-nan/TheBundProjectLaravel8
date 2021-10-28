@@ -19201,7 +19201,7 @@ __webpack_require__.r(__webpack_exports__);
     };
 
     var onSlideChange = function onSlideChange() {
-      console.log('slide change');
+      console.log("slide change");
     };
 
     return {
@@ -21381,7 +21381,7 @@ var _withScopeId = function _withScopeId(n) {
 };
 
 var _hoisted_1 = {
-  "class": "z-1 relative flex"
+  "class": "z-1 relative flex h-full"
 };
 
 var _hoisted_2 = /*#__PURE__*/_withScopeId(function () {
@@ -21432,7 +21432,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_swiper = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("swiper");
 
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_swiper, {
-    "class": "swiper",
+    "class": "swiper max-h-3/4",
     navigation: "",
     modules: $setup.modules,
     loop: true
@@ -21695,10 +21695,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
 var _hoisted_1 = {
-  "class": "grid grid-cols-4 md:grid-cols-4 z-20 absolute w-full"
+  "class": "hidden container lg:grid lg:grid-cols-4 xl:grid-cols-5 z-20 absolute"
 };
 
-var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"bg-primary items-center flex p-6\"><div class=\"w-4/12 flex justify-center\"><img src=\"/images/others/BPXEND.svg\" alt=\"The Bound Project\" class=\"w-12\"></div></div><div class=\"col-span-2\"><div class=\"grid grid-cols-3 h-full text-2xl text-white\"><div class=\"flex justify-center items-center hover:bg-secondary duration-300 ease-in-out cursor-pointer\"> Diseñadores </div><div class=\"flex justify-center items-center hover:bg-secondary duration-300 ease-in-out cursor-pointer\"> Conócenos </div><div class=\"flex justify-center items-center hover:bg-secondary duration-300 ease-in-out cursor-pointer\"> Contenido </div></div></div><div class=\"grid grid-cols-4 text-neutral text-sm relative\"><div class=\"flex justify-center items-center\"><span class=\"bg-neutral bg-opacity-30 px-3 py-0.5 rounded-full\">Esp</span></div><div class=\"flex justify-center items-center\"><span class=\"bg-neutral bg-opacity-30 px-3 py-0.5 rounded-full\">Eng</span></div></div>", 3);
+var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"bg-primary justify-center items-center flex p-8\"><div class=\"flex justify-center\"><img src=\"/images/others/BPXEND.svg\" alt=\"The Bound Project X End\" class=\"w-full\"></div></div><div class=\"col-span-2\"><div class=\"grid grid-cols-3 h-full lg:text-xl xl:text-2xl text-white\"><div class=\"flex justify-center items-center hover:bg-secondary duration-300 ease-in-out cursor-pointer\"> Diseñadores </div><div class=\"flex justify-center items-center hover:bg-secondary duration-300 ease-in-out cursor-pointer\"> Conócenos </div><div class=\"flex justify-center items-center hover:bg-secondary duration-300 ease-in-out cursor-pointer\"> Contenido </div></div></div><div class=\"flex gap-6 px-3 lg:justify-start xl:justify-center 2xl:justify-end text-neutral text-sm relative xl:col-start-4\"><div class=\"flex justify-center items-center\"><span class=\"bg-neutral bg-opacity-30 px-3 py-0.5 rounded-full\">Esp</span></div><div class=\"flex justify-center items-center\"><span class=\"bg-neutral bg-opacity-30 px-3 py-0.5 rounded-full\">Eng</span></div></div>", 3);
 
 var _hoisted_5 = [_hoisted_2];
 function render(_ctx, _cache, $props, $setup, $data, $options) {
@@ -26114,8 +26114,8 @@ var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementV
   "class": "absolute -top-16 -right-16 w-72 z-20 overflow-x-hidden"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
   "class": "",
-  src: "/images/end/Sello.svg",
-  alt: ""
+  src: "/images/end/Sello Blanco.svg",
+  alt: "Evolving new design"
 })], -1
 /* HOISTED */
 );
@@ -26423,7 +26423,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.profile-filter[data-v-386fe02a] {\r\n    box-shadow: inset 0 0 150px 150px rgba(0, 0, 0, 0.6);\n}\r\n\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.profile-filter[data-v-386fe02a] {\n    box-shadow: inset 0 0 150px 150px rgba(0, 0, 0, 0.6);\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

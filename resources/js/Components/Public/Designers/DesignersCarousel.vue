@@ -61,9 +61,27 @@
                 </swiper>
             </div>
         </div>
-        <div class="flex justify-center items-center">
-            <button class="bg-secondary py-3 px-10 rounded-full text-neutral">
-                Mostrar todos ->
+        <div class="flex justify-center items-center text-3xl font-bold">
+            <button
+                class="
+                    bg-secondary
+                    py-3
+                    px-10
+                    rounded-full
+                    text-neutral
+                    flex
+                    items-center
+                    justify-center
+                    w-auto
+                    gap-4
+                "
+            >
+                <div class="flex justify-center items-center">
+                    <span>Mostrar todos</span>
+                </div>
+                <div class="w-6 flex justify-center items-center">
+                    <img alt="Arrow" src="/images/others/Flecha.svg" />
+                </div>
             </button>
         </div>
     </div>

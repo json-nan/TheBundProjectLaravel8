@@ -1,19 +1,19 @@
-const defaultTheme = require('tailwindcss/defaultTheme');
+const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
-    mode: 'jit',
+    mode: "jit",
     purge: [
-        './vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php',
-        './vendor/laravel/jetstream/**/*.blade.php',
-        './storage/framework/views/*.php',
-        './resources/views/**/*.blade.php',
-        './resources/js/**/*.vue',
+        "./vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php",
+        "./vendor/laravel/jetstream/**/*.blade.php",
+        "./storage/framework/views/*.php",
+        "./resources/views/**/*.blade.php",
+        "./resources/js/**/*.vue",
     ],
 
     theme: {
         extend: {
             fontFamily: {
-                sans: ['DM Sans', 'Nunito', ...defaultTheme.fontFamily.sans],
+                sans: ["DM Sans", "Nunito", ...defaultTheme.fontFamily.sans],
             },
             colors: {
                 primary: "#000033",
@@ -21,8 +21,25 @@ module.exports = {
                 accent: "#686899",
                 neutral: "#ECECEC",
             },
+            minHeight: {
+                0: "0",
+                "1/4": "25%",
+                "1/2": "50%",
+                "3/4": "75%",
+                full: "100%",
+            },
+            maxHeight: {
+                0: "0",
+                "1/4": "25%",
+                "1/2": "50%",
+                "3/4": "75%",
+                full: "100%",
+            },
         },
     },
 
-    plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography')],
+    plugins: [
+        require("@tailwindcss/forms"),
+        require("@tailwindcss/typography"),
+    ],
 };
