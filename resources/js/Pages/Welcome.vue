@@ -1,24 +1,27 @@
 <template>
-    <Head title="TheBundProject"/>
+    <Head title="TheBundProject" />
 
     <div class="font-sans overflow-hidden relative">
         <div class="absolute -top-16 -right-16 w-72 z-20 overflow-x-hidden">
-            <img class="" src="/images/end/Sello.svg" alt=""/>
+            <img
+                class=""
+                src="/images/end/Sello Blanco.svg"
+                alt="Evolving new design"
+            />
         </div>
         <div class="flex flex-col mx-auto gap-6">
-            <Navbar/>
-            <Carousel/>
+            <Navbar />
+            <Carousel />
             <DesignersCarousel :designers="designers"></DesignersCarousel>
-                        <Footer />
+            <Footer />
         </div>
     </div>
-
 </template>
 
 <script>
-import {defineComponent} from 'vue'
-import {Head, Link} from '@inertiajs/inertia-vue3';
-import 'swiper/css';
+import { defineComponent } from "vue";
+import { Head, Link } from "@inertiajs/inertia-vue3";
+import "swiper/css";
 import Navbar from "../Components/Public/Navbar";
 import Carousel from "../Components/Public/Carousel";
 import Footer from "../Components/Public/Footer";
@@ -31,23 +34,23 @@ export default defineComponent({
         Link,
         DesignersCarousel,
         Carousel,
-        Footer
+        Footer,
     },
 
     props: {
-        designers: Array
+        designers: Array,
     },
     setup() {
         const onSwiper = (swiper) => {
             console.log(swiper);
         };
         const onSlideChange = () => {
-            console.log('slide change');
+            console.log("slide change");
         };
         return {
             onSwiper,
             onSlideChange,
         };
     },
-})
+});
 </script>

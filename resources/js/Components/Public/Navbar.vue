@@ -1,60 +1,103 @@
 <template>
-    <nav class="grid grid-cols-4 md:grid-cols-4 z-20 absolute w-full">
-        <div class="bg-primary items-center flex p-6">
-            <div class="w-4/12 flex justify-center">
+    <nav
+        class="
+            hidden
+            container
+            lg:grid lg:grid-cols-4
+            xl:grid-cols-5
+            z-20
+            absolute
+        "
+    >
+        <div class="bg-primary justify-center items-center flex p-8">
+            <div class="flex justify-center">
                 <img
-                    src="/images/bp/The-Bünd-Project-Icono.svg"
-                    alt="The Bound Project"
-                    class="w-12"
-                />
-            </div>
-            <div class="w-1/12 h-full flex justify-center">
-                <div class="bg-neutral h-full w-1/12"></div>
-            </div>
-            <div class="w-7/12 flex justify-center">
-                <img
-                    src="/images/end/End-Logotipo-Mediano.svg"
-                    alt="END"
+                    src="/images/others/BPXEND.svg"
+                    alt="The Bound Project X End"
                     class="w-full"
                 />
             </div>
         </div>
         <div class="col-span-2">
-            <div class="grid grid-cols-3 h-full text-2xl text-white">
+            <div
+                class="
+                    grid grid-cols-3
+                    h-full
+                    lg:text-xl
+                    xl:text-2xl
+                    text-white
+                "
+            >
                 <div
-                    class="flex justify-center items-center hover:bg-secondary duration-300 ease-in-out cursor-pointer">
+                    class="
+                        flex
+                        justify-center
+                        items-center
+                        hover:bg-secondary
+                        duration-300
+                        ease-in-out
+                        cursor-pointer
+                    "
+                >
                     Diseñadores
                 </div>
                 <div
-                    class="flex justify-center items-center hover:bg-secondary duration-300 ease-in-out cursor-pointer">
+                    class="
+                        flex
+                        justify-center
+                        items-center
+                        hover:bg-secondary
+                        duration-300
+                        ease-in-out
+                        cursor-pointer
+                    "
+                >
                     Conócenos
                 </div>
                 <div
-                    class="flex justify-center items-center hover:bg-secondary duration-300 ease-in-out cursor-pointer">
+                    class="
+                        flex
+                        justify-center
+                        items-center
+                        hover:bg-secondary
+                        duration-300
+                        ease-in-out
+                        cursor-pointer
+                    "
+                >
                     Contenido
                 </div>
             </div>
         </div>
-        <div class="grid grid-cols-4 text-neutral text-sm relative">
-            <div class="flex justify-center items-center">
-        <span class="bg-neutral bg-opacity-30 px-3 py-0.5 rounded-full"
-        >Esp</span
+        <div
+            class="
+                flex
+                gap-6
+                px-3
+                lg:justify-start
+                xl:justify-center
+                2xl:justify-end
+                text-neutral text-sm
+                relative
+                xl:col-start-4
+            "
         >
+            <div class="flex justify-center items-center">
+                <span class="bg-neutral bg-opacity-30 px-3 py-0.5 rounded-full"
+                    >Esp</span
+                >
             </div>
             <div class="flex justify-center items-center">
-        <span class="bg-neutral bg-opacity-30 px-3 py-0.5 rounded-full"
-        >Eng</span
-        >
+                <span class="bg-neutral bg-opacity-30 px-3 py-0.5 rounded-full"
+                    >Eng</span
+                >
             </div>
         </div>
     </nav>
 </template>
 
 <script>
-export default {
-}
+export default {};
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>
