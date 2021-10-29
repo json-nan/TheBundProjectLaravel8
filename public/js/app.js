@@ -19384,7 +19384,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({});
+/* harmony import */ var _inertiajs_inertia_vue3__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @inertiajs/inertia-vue3 */ "./node_modules/@inertiajs/inertia-vue3/dist/index.js");
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  components: {
+    Link: _inertiajs_inertia_vue3__WEBPACK_IMPORTED_MODULE_0__.Link
+  }
+});
 
 /***/ }),
 
@@ -20350,6 +20356,46 @@ __webpack_require__.r(__webpack_exports__);
     }
   }
 }));
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/AboutUs.vue?vue&type=script&lang=js":
+/*!********************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/AboutUs.vue?vue&type=script&lang=js ***!
+  \********************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _Components_Public_Navbar__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../Components/Public/Navbar */ "./resources/js/Components/Public/Navbar.vue");
+/* harmony import */ var _Components_Public_Carousel__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Components/Public/Carousel */ "./resources/js/Components/Public/Carousel.vue");
+/* harmony import */ var _Components_Public_Designers_DesignersCarousel__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../Components/Public/Designers/DesignersCarousel */ "./resources/js/Components/Public/Designers/DesignersCarousel.vue");
+/* harmony import */ var _inertiajs_inertia_vue3__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @inertiajs/inertia-vue3 */ "./node_modules/@inertiajs/inertia-vue3/dist/index.js");
+
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  name: "AboutUs.vue",
+  components: {
+    DesignersCarousel: _Components_Public_Designers_DesignersCarousel__WEBPACK_IMPORTED_MODULE_2__["default"],
+    Carousel: _Components_Public_Carousel__WEBPACK_IMPORTED_MODULE_1__["default"],
+    Navbar: _Components_Public_Navbar__WEBPACK_IMPORTED_MODULE_0__["default"],
+    Head: _inertiajs_inertia_vue3__WEBPACK_IMPORTED_MODULE_3__.Head
+  },
+  data: function data() {
+    return {
+      startFilter: false,
+      missionFilter: false,
+      visionFilter: false,
+      newGenerationFilter: false
+    };
+  },
+  methods: {}
+});
 
 /***/ }),
 
@@ -21541,11 +21587,11 @@ var _hoisted_2 = {
 };
 var _hoisted_3 = ["src"];
 var _hoisted_4 = {
-  "class": "flex flex-col col-span-3"
+  "class": "flex flex-col col-span-3 gap-4"
 };
 
 var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-  "class": "flex justify-end p-5 gap-2"
+  "class": "flex justify-end px-5 pt-5 gap-2"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
   alt: "",
   "class": "w-10 bg-secondary p-1 rounded-xl",
@@ -21559,28 +21605,39 @@ var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementV
 );
 
 var _hoisted_6 = {
-  "class": "h-72 flex justify-center"
+  "class": "h-56 flex justify-center px-6"
 };
 var _hoisted_7 = ["src"];
 var _hoisted_8 = {
-  "class": "overflow-y-scroll p-6 h-40 scrollbar scrollbar-thumb-gray-900 scrollbar-track-gray-100"
+  "class": "overflow-y-scroll px-6 h-40 scrollbar-thin scrollbar-thumb-rounded scrollbar scrollbar-thumb-primary hover:scrollbar-thumb-secondary"
 };
+
+var _hoisted_9 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  "class": "flex items-center justify-center pb-3 w-full"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+  "class": "w-10/12 bg-secondary py-2 rounded-full text-neutral flex items-center justify-center w-auto gap-4"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  "class": "flex justify-center items-center text-2xl"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, "Portafolio")])])], -1
+/* HOISTED */
+);
+
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
     src: $props.designer.profile_picture,
     alt: "",
-    "class": "rounded-3xl"
+    "class": "rounded-3xl object-cover h-full"
   }, null, 8
   /* PROPS */
   , _hoisted_3)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [_hoisted_5, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
     src: $props.designer.brand_picture,
     alt: "",
-    "class": "max-h-full"
+    "class": "w-full object-cover h-full"
   }, null, 8
   /* PROPS */
   , _hoisted_7)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_8, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.designer.description) + " " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.designer.description) + " " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.designer.description) + " " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.designer.description), 1
   /* TEXT */
-  )])]);
+  ), _hoisted_9])]);
 }
 
 /***/ }),
@@ -21723,7 +21780,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     onClose: _cache[0] || (_cache[0] = function ($event) {
       return $options.toggleDesignerModal(false);
     }),
-    maxWidth: "4xl"
+    maxWidth: "3xl"
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
       return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_designer_info_modal, {
@@ -21828,11 +21885,65 @@ var _hoisted_1 = {
   "class": "hidden container lg:grid lg:grid-cols-4 xl:grid-cols-5 z-20 absolute"
 };
 
-var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"bg-primary justify-center items-center flex p-8\"><div class=\"flex justify-center\"><img src=\"/images/others/BPXEND.svg\" alt=\"The Bound Project X End\" class=\"w-full\"></div></div><div class=\"col-span-2\"><div class=\"grid grid-cols-3 h-full lg:text-xl xl:text-2xl text-white\"><div class=\"flex justify-center items-center hover:bg-secondary duration-300 ease-in-out cursor-pointer\"> Diseñadores </div><div class=\"flex justify-center items-center hover:bg-secondary duration-300 ease-in-out cursor-pointer\"> Conócenos </div><div class=\"flex justify-center items-center hover:bg-secondary duration-300 ease-in-out cursor-pointer\"> Contenido </div></div></div><div class=\"flex gap-6 px-3 lg:justify-start xl:justify-center 2xl:justify-end text-neutral text-sm relative xl:col-start-4\"><div class=\"flex justify-center items-center\"><span class=\"bg-neutral bg-opacity-30 px-3 py-0.5 rounded-full\">Esp</span></div><div class=\"flex justify-center items-center\"><span class=\"bg-neutral bg-opacity-30 px-3 py-0.5 rounded-full\">Eng</span></div></div>", 3);
+var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  "class": "bg-primary justify-center items-center flex p-8"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  "class": "flex justify-center"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
+  alt: "The Bound Project X End",
+  "class": "w-full",
+  src: "/images/others/BPXEND.svg"
+})])], -1
+/* HOISTED */
+);
 
-var _hoisted_5 = [_hoisted_2];
+var _hoisted_3 = {
+  "class": "col-span-2"
+};
+var _hoisted_4 = {
+  "class": "grid grid-cols-3 h-full lg:text-xl xl:text-2xl text-white"
+};
+
+var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Diseñadores ");
+
+var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Conócenos ");
+
+var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  "class": "flex justify-center items-center hover:bg-secondary duration-300 ease-in-out cursor-pointer"
+}, " Contenido ", -1
+/* HOISTED */
+);
+
+var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"flex gap-6 px-3 lg:justify-start xl:justify-center 2xl:justify-end text-neutral text-sm relative xl:col-start-4\"><div class=\"flex justify-center items-center\"><span class=\"bg-neutral bg-opacity-30 px-3 py-0.5 rounded-full\">Esp</span></div><div class=\"flex justify-center items-center\"><span class=\"bg-neutral bg-opacity-30 px-3 py-0.5 rounded-full\">Eng</span></div></div>", 1);
+
 function render(_ctx, _cache, $props, $setup, $data, $options) {
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("nav", _hoisted_1, _hoisted_5);
+  var _component_Link = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Link");
+
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("nav", _hoisted_1, [_hoisted_2, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Link, {
+    as: "button",
+    "class": "flex justify-center items-center hover:bg-secondary duration-300 ease-in-out",
+    href: "/designers",
+    type: "button"
+  }, {
+    "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+      return [_hoisted_5];
+    }),
+    _: 1
+    /* STABLE */
+
+  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Link, {
+    as: "button",
+    "class": "flex justify-center items-center hover:bg-secondary duration-300 ease-in-out",
+    href: "/about-us",
+    type: "button"
+  }, {
+    "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+      return [_hoisted_6];
+    }),
+    _: 1
+    /* STABLE */
+
+  }), _hoisted_7])]), _hoisted_8]);
 }
 
 /***/ }),
@@ -22755,7 +22866,7 @@ var _hoisted_1 = {
 };
 
 var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-  "class": "absolute inset-0 bg-gray-500 opacity-75"
+  "class": "bg-primary bg-opacity-40 backdrop-filter absolute inset-0 backdrop-blur-2xl"
 }, null, -1
 /* HOISTED */
 );
@@ -22799,7 +22910,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       }, {
         "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
           return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-            "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)(["bg-white rounded-3xl overflow-hidden shadow-xl transform transition-all sm:w-full sm:mx-auto", _ctx.maxWidthClass])
+            "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)([_ctx.maxWidthClass, "bg-white rounded-3xl overflow-hidden shadow-xl transform transition-all sm:w-full sm:mx-auto"])
           }, [_ctx.show ? (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderSlot)(_ctx.$slots, "default", {
             key: 0
           }) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)], 2
@@ -24094,6 +24205,149 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   }, 8
   /* PROPS */
   , ["show"])]);
+}
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/AboutUs.vue?vue&type=template&id=29b059f2":
+/*!************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/AboutUs.vue?vue&type=template&id=29b059f2 ***!
+  \************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render)
+/* harmony export */ });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
+
+var _hoisted_1 = {
+  "class": "font-sans overflow-hidden relative"
+};
+var _hoisted_2 = {
+  "class": "flex flex-col mx-auto gap-6"
+};
+
+var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"flex gap-4\"><div class=\"w-32 h-32 bg-primary p-4 relative\"><img alt=\"\" class=\"max-h-full mx-auto\" src=\"/images/bp/The-Bünd-Project-Icono.svg\"><div class=\"absolute text-neutral bottom-0 right-1 text-xl\"><span>&gt;</span></div></div><div class=\"p-4 flex items-center gap-8\"><div class=\"bg-secondary w-6 h-6\"></div><div class=\"text-primary text-4xl font-extrabold\"><span>Quiénes somos</span></div></div></div>", 1);
+
+var _hoisted_4 = {
+  "class": "flex items-center justify-center"
+};
+var _hoisted_5 = {
+  "class": "w-8/12"
+};
+var _hoisted_6 = {
+  "class": "relative grid grid-cols-2 gap-8"
+};
+var _hoisted_7 = {
+  key: 0,
+  "class": "absolute h-full w-full bg-neutral bg-opacity-40 backdrop-filter backdrop-blur-sm z-50"
+};
+
+var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  "class": "absolute left-0 bottom-0 text-6xl text-neutral font-extrabold ml-8 mb-8"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, "El inicio")], -1
+/* HOISTED */
+);
+
+var _hoisted_9 = [_hoisted_8];
+
+var _hoisted_10 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"flex items-center justify-between\"><img alt=\"\" class=\"w-7/12\" src=\"/images/bp/The-Bünd-Project-Imagotipo.svg\"><div class=\"text-5xl font-extrabold\"><span> 2020 </span></div></div><div class=\"flex justify-between mx-1 text-sm\"><span class=\"\">R</span><span class=\"\">E</span><span class=\"\">S</span><span class=\"\">O</span><span class=\"\">N</span><span class=\"\">A</span><span class=\"\">N</span><span class=\"\">C</span><span class=\"\">I</span><span class=\"\">A</span></div><div class=\"flex justify-between mx-1 text-sm text-neutral text-justify pb-6\"><span>Somos diseñadores apasionados por la innovación y la incorporación de nuevas tecnologías en nuestros productos que ayuden a mejorar la experiencia del usuario y que además, sean productos visualmente atractivos. Somos resonancia porque hacemos que nuestros productos logren más de lo que se proponen: nos ayudamos mutuamente en diferentes areas del diseño y eso nos hace únicos. </span></div>", 3);
+
+var _hoisted_13 = {
+  key: 0,
+  "class": "absolute h-full w-full bg-neutral bg-opacity-40 backdrop-filter backdrop-blur-sm z-50"
+};
+
+var _hoisted_14 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  "class": "absolute left-0 bottom-0 text-6xl text-neutral font-extrabold ml-8 mb-8"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, "El inicio")], -1
+/* HOISTED */
+);
+
+var _hoisted_15 = [_hoisted_14];
+
+var _hoisted_16 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"flex items-center justify-between\"><img alt=\"\" class=\"w-7/12\" src=\"/images/bp/The-Bünd-Project-Imagotipo.svg\"><div class=\"text-5xl font-extrabold\"><span> 2020 </span></div></div><div class=\"flex justify-between mx-1 text-sm\"><span class=\"\">R</span><span class=\"\">E</span><span class=\"\">S</span><span class=\"\">O</span><span class=\"\">N</span><span class=\"\">A</span><span class=\"\">N</span><span class=\"\">C</span><span class=\"\">I</span><span class=\"\">A</span></div><div class=\"flex justify-between mx-1 text-sm text-neutral text-justify pb-6\"><span>Somos diseñadores apasionados por la innovación y la incorporación de nuevas tecnologías en nuestros productos que ayuden a mejorar la experiencia del usuario y que además, sean productos visualmente atractivos. Somos resonancia porque hacemos que nuestros productos logren más de lo que se proponen: nos ayudamos mutuamente en diferentes areas del diseño y eso nos hace únicos. </span></div>", 3);
+
+var _hoisted_19 = {
+  key: 0,
+  "class": "absolute h-full w-full bg-neutral bg-opacity-40 backdrop-filter backdrop-blur-sm z-50"
+};
+
+var _hoisted_20 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  "class": "absolute left-0 bottom-0 text-6xl text-neutral font-extrabold ml-8 mb-8"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, "El inicio")], -1
+/* HOISTED */
+);
+
+var _hoisted_21 = [_hoisted_20];
+
+var _hoisted_22 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"flex items-center justify-between\"><img alt=\"\" class=\"w-7/12\" src=\"/images/bp/The-Bünd-Project-Imagotipo.svg\"><div class=\"text-5xl font-extrabold\"><span> 2020 </span></div></div><div class=\"flex justify-between mx-1 text-sm\"><span class=\"\">R</span><span class=\"\">E</span><span class=\"\">S</span><span class=\"\">O</span><span class=\"\">N</span><span class=\"\">A</span><span class=\"\">N</span><span class=\"\">C</span><span class=\"\">I</span><span class=\"\">A</span></div><div class=\"flex justify-between mx-1 text-sm text-neutral text-justify pb-6\"><span>Somos diseñadores apasionados por la innovación y la incorporación de nuevas tecnologías en nuestros productos que ayuden a mejorar la experiencia del usuario y que además, sean productos visualmente atractivos. Somos resonancia porque hacemos que nuestros productos logren más de lo que se proponen: nos ayudamos mutuamente en diferentes areas del diseño y eso nos hace únicos. </span></div>", 3);
+
+var _hoisted_25 = {
+  key: 0,
+  "class": "absolute h-full w-full bg-neutral bg-opacity-40 backdrop-filter backdrop-blur-sm z-50"
+};
+
+var _hoisted_26 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  "class": "absolute left-0 bottom-0 text-6xl text-neutral font-extrabold ml-8 mb-8"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, "El inicio")], -1
+/* HOISTED */
+);
+
+var _hoisted_27 = [_hoisted_26];
+
+var _hoisted_28 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"flex items-center justify-between\"><img alt=\"\" class=\"w-7/12\" src=\"/images/bp/The-Bünd-Project-Imagotipo.svg\"><div class=\"text-5xl font-extrabold\"><span> 2020 </span></div></div><div class=\"flex justify-between mx-1 text-sm\"><span class=\"\">R</span><span class=\"\">E</span><span class=\"\">S</span><span class=\"\">O</span><span class=\"\">N</span><span class=\"\">A</span><span class=\"\">N</span><span class=\"\">C</span><span class=\"\">I</span><span class=\"\">A</span></div><div class=\"flex justify-between mx-1 text-sm text-neutral text-justify pb-6\"><span>Somos diseñadores apasionados por la innovación y la incorporación de nuevas tecnologías en nuestros productos que ayuden a mejorar la experiencia del usuario y que además, sean productos visualmente atractivos. Somos resonancia porque hacemos que nuestros productos logren más de lo que se proponen: nos ayudamos mutuamente en diferentes areas del diseño y eso nos hace únicos. </span></div>", 3);
+
+function render(_ctx, _cache, $props, $setup, $data, $options) {
+  var _component_Head = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Head");
+
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_Head, {
+    title: "TheBundProject"
+  }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("            <Navbar />"), _hoisted_3, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+    "class": "grid grid-cols-1 bg-accent rounded-lg px-7 py-6 gap-3 relative",
+    onMouseenter: _cache[0] || (_cache[0] = function ($event) {
+      return $data.startFilter = true;
+    }),
+    onMouseleave: _cache[1] || (_cache[1] = function ($event) {
+      return $data.startFilter = false;
+    })
+  }, [$data.startFilter ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_7, _hoisted_9)) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), _hoisted_10], 32
+  /* HYDRATE_EVENTS */
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+    "class": "absolute top-10 grid grid-cols-1 bg-accent rounded-lg px-7 py-6 gap-3 relative",
+    onMouseenter: _cache[2] || (_cache[2] = function ($event) {
+      return $data.startFilter = true;
+    }),
+    onMouseleave: _cache[3] || (_cache[3] = function ($event) {
+      return $data.startFilter = false;
+    })
+  }, [$data.startFilter ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_13, _hoisted_15)) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), _hoisted_16], 32
+  /* HYDRATE_EVENTS */
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+    "class": "absolute top-10 grid grid-cols-1 bg-accent rounded-lg px-7 py-6 gap-3 relative",
+    onMouseenter: _cache[4] || (_cache[4] = function ($event) {
+      return $data.startFilter = true;
+    }),
+    onMouseleave: _cache[5] || (_cache[5] = function ($event) {
+      return $data.startFilter = false;
+    })
+  }, [$data.startFilter ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_19, _hoisted_21)) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), _hoisted_22], 32
+  /* HYDRATE_EVENTS */
+  ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+    "class": "absolute top-10 grid grid-cols-1 bg-accent rounded-lg px-7 py-6 gap-3 relative",
+    onMouseenter: _cache[6] || (_cache[6] = function ($event) {
+      return $data.startFilter = true;
+    }),
+    onMouseleave: _cache[7] || (_cache[7] = function ($event) {
+      return $data.startFilter = false;
+    })
+  }, [$data.startFilter ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_25, _hoisted_27)) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), _hoisted_28], 32
+  /* HYDRATE_EVENTS */
+  )])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("            <DesignersCarousel :designers=\"designers\"></DesignersCarousel>"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("            <Footer />")])])], 64
+  /* STABLE_FRAGMENT */
+  );
 }
 
 /***/ }),
@@ -51887,6 +52141,34 @@ if (false) {}
 
 /***/ }),
 
+/***/ "./resources/js/Pages/AboutUs.vue":
+/*!****************************************!*\
+  !*** ./resources/js/Pages/AboutUs.vue ***!
+  \****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _AboutUs_vue_vue_type_template_id_29b059f2__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./AboutUs.vue?vue&type=template&id=29b059f2 */ "./resources/js/Pages/AboutUs.vue?vue&type=template&id=29b059f2");
+/* harmony import */ var _AboutUs_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./AboutUs.vue?vue&type=script&lang=js */ "./resources/js/Pages/AboutUs.vue?vue&type=script&lang=js");
+/* harmony import */ var C_laragon_www_TheBundProject_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+
+
+
+
+;
+const __exports__ = /*#__PURE__*/(0,C_laragon_www_TheBundProject_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_AboutUs_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_AboutUs_vue_vue_type_template_id_29b059f2__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/Pages/AboutUs.vue"]])
+/* hot reload */
+if (false) {}
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__exports__);
+
+/***/ }),
+
 /***/ "./resources/js/Pages/Auth/ConfirmPassword.vue":
 /*!*****************************************************!*\
   !*** ./resources/js/Pages/Auth/ConfirmPassword.vue ***!
@@ -52859,6 +53141,22 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/Pages/AboutUs.vue?vue&type=script&lang=js":
+/*!****************************************************************!*\
+  !*** ./resources/js/Pages/AboutUs.vue?vue&type=script&lang=js ***!
+  \****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_AboutUs_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__["default"])
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_AboutUs_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./AboutUs.vue?vue&type=script&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/AboutUs.vue?vue&type=script&lang=js");
+ 
+
+/***/ }),
+
 /***/ "./resources/js/Pages/Auth/ConfirmPassword.vue?vue&type=script&lang=js":
 /*!*****************************************************************************!*\
   !*** ./resources/js/Pages/Auth/ConfirmPassword.vue?vue&type=script&lang=js ***!
@@ -53707,6 +54005,22 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/Pages/AboutUs.vue?vue&type=template&id=29b059f2":
+/*!**********************************************************************!*\
+  !*** ./resources/js/Pages/AboutUs.vue?vue&type=template&id=29b059f2 ***!
+  \**********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_AboutUs_vue_vue_type_template_id_29b059f2__WEBPACK_IMPORTED_MODULE_0__.render)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_AboutUs_vue_vue_type_template_id_29b059f2__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./AboutUs.vue?vue&type=template&id=29b059f2 */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/Pages/AboutUs.vue?vue&type=template&id=29b059f2");
+
+
+/***/ }),
+
 /***/ "./resources/js/Pages/Auth/ConfirmPassword.vue?vue&type=template&id=475ae21d":
 /*!***********************************************************************************!*\
   !*** ./resources/js/Pages/Auth/ConfirmPassword.vue?vue&type=template&id=475ae21d ***!
@@ -54256,6 +54570,7 @@ function compileToFunction(template, options) {
 var map = {
 	"./API/Index.vue": "./resources/js/Pages/API/Index.vue",
 	"./API/Partials/ApiTokenManager.vue": "./resources/js/Pages/API/Partials/ApiTokenManager.vue",
+	"./AboutUs.vue": "./resources/js/Pages/AboutUs.vue",
 	"./Auth/ConfirmPassword.vue": "./resources/js/Pages/Auth/ConfirmPassword.vue",
 	"./Auth/ForgotPassword.vue": "./resources/js/Pages/Auth/ForgotPassword.vue",
 	"./Auth/Login.vue": "./resources/js/Pages/Auth/Login.vue",

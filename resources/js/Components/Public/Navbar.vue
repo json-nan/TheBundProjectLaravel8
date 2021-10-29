@@ -12,9 +12,9 @@
         <div class="bg-primary justify-center items-center flex p-8">
             <div class="flex justify-center">
                 <img
-                    src="/images/others/BPXEND.svg"
                     alt="The Bound Project X End"
                     class="w-full"
+                    src="/images/others/BPXEND.svg"
                 />
             </div>
         </div>
@@ -28,7 +28,8 @@
                     text-white
                 "
             >
-                <div
+                <Link
+                    as="button"
                     class="
                         flex
                         justify-center
@@ -36,12 +37,14 @@
                         hover:bg-secondary
                         duration-300
                         ease-in-out
-                        cursor-pointer
                     "
-                >
-                    Diseñadores
-                </div>
-                <div
+                    href="/designers"
+                    type="button"
+                    >Diseñadores
+                </Link>
+
+                <Link
+                    as="button"
                     class="
                         flex
                         justify-center
@@ -49,11 +52,12 @@
                         hover:bg-secondary
                         duration-300
                         ease-in-out
-                        cursor-pointer
                     "
-                >
-                    Conócenos
-                </div>
+                    href="/about-us"
+                    type="button"
+                    >Conócenos
+                </Link>
+
                 <div
                     class="
                         flex
@@ -97,7 +101,13 @@
 </template>
 
 <script>
-export default {};
+import { Link } from "@inertiajs/inertia-vue3";
+
+export default {
+    components: {
+        Link,
+    },
+};
 </script>
 
 <style scoped></style>

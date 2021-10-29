@@ -1,6 +1,5 @@
 <?php
 
-use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
@@ -21,6 +20,9 @@ Route::get('/', function () {
     ]);
 });
 
+Route::get('about-us', function () {
+    return Inertia::render('AboutUs');
+});
 
 Route::prefix('dashboard')->group(function () {
     Route::resource('designers', \App\Http\Controllers\DesignerController::class);

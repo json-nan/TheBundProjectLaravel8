@@ -31,7 +31,7 @@
                     >
                         <div
                             class="
-                                bg-primary bg-opacity-50
+                                bg-primary bg-opacity-40
                                 backdrop-filter
                                 absolute
                                 inset-0
