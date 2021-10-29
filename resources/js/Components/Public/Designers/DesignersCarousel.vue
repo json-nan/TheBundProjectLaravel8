@@ -1,5 +1,14 @@
 <template>
     <div class="flex flex-col gap-6">
+        <modal
+            :show="showDesignerModal"
+            @close="toggleDesignerModal(false)"
+            maxWidth="3xl"
+        >
+            <designer-info-modal
+                :designer="selectedDesigner"
+            ></designer-info-modal>
+        </modal>
         <div class="text-3xl font-bold px-20 text-gray-800">
             Nuestros diseñadores
         </div>
@@ -14,7 +23,8 @@
                     <swiper-slide
                         v-for="designer in designers"
                         :key="designer.id"
-                        class=""
+                        class="cursor-pointer"
+                        @click="toggleDesignerModal(true, designer)"
                     >
                         <div
                             class="
@@ -92,15 +102,27 @@ import { Swiper, SwiperSlide } from "swiper/vue";
 import "swiper/css";
 import DesignerSlide from "./DesignerSlide";
 import { Navigation } from "swiper";
+import Modal from "../../../Jetstream/Modal";
+import DesignerInfoModal from "./DesignerInfoModal";
+import DialogModal from "../../../Jetstream/DialogModal";
 
 export default {
     name: "DesignersCarousel",
     components: {
+        DialogModal,
+        DesignerInfoModal,
+        Modal,
         DesignerSlide,
         Swiper,
         SwiperSlide,
     },
 
+    data() {
+        return {
+            showDesignerModal: false,
+            selectedDesigner: {},
+        };
+    },
     props: {
         designers: {
             type: Array,
@@ -133,6 +155,12 @@ export default {
                 },
             },
         };
+    },
+    methods: {
+        toggleDesignerModal(show, designer = {}) {
+            this.selectedDesigner = designer;
+            this.showDesignerModal = show;
+        },
     },
 };
 </script>
