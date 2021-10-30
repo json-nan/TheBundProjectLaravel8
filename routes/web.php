@@ -24,9 +24,6 @@ Route::get('about-us', function () {
     return Inertia::render('AboutUs');
 });
 
-Route::prefix('dashboard')->group(function () {
-    Route::resource('designers', \App\Http\Controllers\DesignerController::class);
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
 });
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-    return Inertia::render('Dashboard');
-})->name('dashboard');
