@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Designer extends Model
@@ -15,7 +16,13 @@ class Designer extends Model
         "brand_name",
         "profile_picture",
         "brand_picture",
+        "logo_icon",
         "description",
         "enabled"
     ];
+
+    public function tags(): BelongsToMany
+    {
+        return $this->belongsToMany(Tag::class);
+    }
 }
