@@ -2,8 +2,8 @@
     <div class="flex flex-col gap-6">
         <modal
             :show="showDesignerModal"
-            @close="toggleDesignerModal(false)"
             maxWidth="3xl"
+            @close="toggleDesignerModal(false)"
         >
             <designer-info-modal
                 :designer="selectedDesigner"
@@ -37,7 +37,7 @@
                             "
                         >
                             <img
-                                :src="designer.profile_picture"
+                                :src="getPictureUrl(designer.profile_picture)"
                                 alt="Profile image"
                                 class="z-0"
                             />
@@ -160,6 +160,9 @@ export default {
         toggleDesignerModal(show, designer = {}) {
             this.selectedDesigner = designer;
             this.showDesignerModal = show;
+        },
+        getPictureUrl(url) {
+            return url.startsWith("http") ? url : "storage/" + url;
         },
     },
 };

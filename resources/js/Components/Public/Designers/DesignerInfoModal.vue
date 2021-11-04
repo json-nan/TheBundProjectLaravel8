@@ -2,7 +2,7 @@
     <div class="grid grid-cols-7">
         <div class="col-span-4">
             <img
-                :src="designer.profile_picture"
+                :src="getPictureUrl(designer.profile_picture)"
                 alt=""
                 class="rounded-3xl object-cover h-full"
             />
@@ -22,7 +22,7 @@
             </div>
             <div class="h-56 flex justify-center px-6">
                 <img
-                    :src="designer.brand_picture"
+                    :src="getPictureUrl(designer.brand_picture)"
                     alt=""
                     class="w-full object-cover h-full"
                 />
@@ -73,6 +73,11 @@ export default {
         designer: {
             type: Object,
             default: () => {},
+        },
+    },
+    methods: {
+        getPictureUrl(url) {
+            return url.startsWith("http") ? url : "storage/" + url;
         },
     },
 };
