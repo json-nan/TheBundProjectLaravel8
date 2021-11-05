@@ -25,4 +25,9 @@ class Designer extends Model
     {
         return $this->belongsToMany(Tag::class);
     }
+
+    public function socialNetworks(): BelongsToMany
+    {
+        return $this->belongsToMany(SocialNetwork::class);
+    }
 }
