@@ -16,7 +16,7 @@ class CreateDesignerSocialNetworkTable extends Migration
         Schema::create('designer_social_network', function (Blueprint $table) {
             $table->foreignId('designer_id')->constrained();
             $table->foreignId('social_network_id')->constrained();
-            $table->text('url');
+            $table->text('url')->nullable();
 
             $table->primary(['designer_id', 'social_network_id']);
         });
