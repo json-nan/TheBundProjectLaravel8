@@ -9,8 +9,8 @@
                 :designer="selectedDesigner"
             ></designer-info-modal>
         </modal>
-        <div class="text-3xl font-bold px-20 text-gray-800">
-            Nuestros diseñadores
+        <div class="text-5xl font-bold py-5 px-20 text-gray-800">
+            Un vistazo rápido
         </div>
         <div class="w-full flex justify-center">
             <div class="w-full">
@@ -19,6 +19,7 @@
                     :loop="true"
                     :modules="modules"
                     navigation
+                    class="px-10"
                 >
                     <swiper-slide
                         v-for="designer in designers"
@@ -71,8 +72,9 @@
                 </swiper>
             </div>
         </div>
-        <div class="flex justify-center items-center text-3xl font-bold">
-            <button
+        <div class="flex justify-center items-center text-4xl font-bold mt-4">
+            <Link
+                as="button"
                 class="
                     bg-secondary
                     py-3
@@ -85,6 +87,8 @@
                     w-auto
                     gap-4
                 "
+                href="/designers"
+                type="button"
             >
                 <div class="flex justify-center items-center">
                     <span>Mostrar todos</span>
@@ -92,7 +96,7 @@
                 <div class="w-6 flex justify-center items-center">
                     <img alt="Arrow" src="/images/others/Flecha.svg" />
                 </div>
-            </button>
+            </Link>
         </div>
     </div>
 </template>
@@ -105,6 +109,7 @@ import { Navigation } from "swiper";
 import Modal from "../../../Jetstream/Modal";
 import DesignerInfoModal from "./DesignerInfoModal";
 import DialogModal from "../../../Jetstream/DialogModal";
+import { Link } from "@inertiajs/inertia-vue3";
 
 export default {
     name: "DesignersCarousel",
@@ -115,6 +120,7 @@ export default {
         DesignerSlide,
         Swiper,
         SwiperSlide,
+        Link,
     },
 
     data() {
@@ -168,7 +174,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 .profile-filter {
     box-shadow: inset 0 0 90px 50px rgba(0, 0, 0, 0.6);
 }
