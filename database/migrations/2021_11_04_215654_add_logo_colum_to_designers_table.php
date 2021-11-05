@@ -14,7 +14,7 @@ class AddLogoColumToDesignersTable extends Migration
     public function up()
     {
         Schema::table('designers', function (Blueprint $table) {
-            $table->string('logo_icon')->after('brand_picture');
+            $table->string('logo_icon')->after('brand_picture')->nullable();
         });
     }
 
