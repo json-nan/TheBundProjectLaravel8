@@ -23,11 +23,11 @@ class Designer extends Model
 
     public function tags(): BelongsToMany
     {
-        return $this->belongsToMany(Tag::class);
+        return $this->belongsToMany(Tag::class)->using(DesignerTag::class);
     }
 
     public function socialNetworks(): BelongsToMany
     {
-        return $this->belongsToMany(SocialNetwork::class);
+        return $this->belongsToMany(SocialNetwork::class)->withPivot(['url'])->using(DesignerSocialNetwork::class);
     }
 }
