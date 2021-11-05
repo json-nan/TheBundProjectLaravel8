@@ -3,18 +3,22 @@
 namespace App\Http\Controllers;
 
 use App\Models\Designer;
+use App\Models\Tag;
 use Illuminate\Http\Request;
+use Inertia\Inertia;
 
 class DesignerController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
      */
     public function index()
     {
-        //
+        return Inertia::render('Designers', [
+            'tags' => Tag::all(),
+            'designers' => Designer::with('tags')->get()
+        ]);
     }
 
     /**

@@ -24,6 +24,7 @@ Route::get('about-us', function () {
     return Inertia::render('AboutUs');
 });
 
+Route::get('designers', [\App\Http\Controllers\DesignerController::class, 'index']);
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
