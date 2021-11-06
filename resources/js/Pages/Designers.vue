@@ -38,8 +38,6 @@
                 <div></div>
                 <div
                     class="
-                        flex
-                        gap-3
                         max-w-full
                         overflow-x-scroll
                         scrollbar
@@ -49,28 +47,32 @@
                         p-8
                     "
                 >
-                    <Pill
-                        class="
-                            cursor-pointer
-                            hover:bg-accent
-                            transition
-                            duration-300
-                        "
-                        :bg-class="selectedTag === 0 ? 'bg-primary' : undefined"
-                        @click="changeDesigners(0)"
-                    >
-                        <span class="text-neutral font-bold text-2xl mx-28"
-                            >Todos</span
+                    <div class="flex gap-3">
+                        <Pill
+                            :bg-class="
+                                selectedTag === 0 ? 'bg-primary' : undefined
+                            "
+                            class="
+                                cursor-pointer
+                                hover:bg-accent
+                                transition
+                                duration-300
+                            "
+                            @click="changeDesigners(0)"
                         >
-                    </Pill>
-                    <PillTag
-                        v-for="tag in tags"
-                        :selected="selectedTag"
-                        :key="tag.id"
-                        :tag="tag"
-                        v-on:click="changeDesigners($event)"
-                    >
-                    </PillTag>
+                            <span class="text-neutral font-bold text-2xl mx-28"
+                                >Todos</span
+                            >
+                        </Pill>
+                        <PillTag
+                            v-for="tag in tags"
+                            :key="tag.id"
+                            :selected="selectedTag"
+                            :tag="tag"
+                            v-on:click="changeDesigners($event)"
+                        >
+                        </PillTag>
+                    </div>
                 </div>
 
                 <div
@@ -111,9 +113,9 @@
                             />
                             <div class="absolute top-2 left-2 z-10">
                                 <img
-                                    class="w-20 h-20 rounded-3xl"
                                     :src="getPictureUrl(designer.logo_icon)"
                                     alt=""
+                                    class="w-20 h-20 rounded-3xl"
                                 />
                             </div>
 
@@ -196,7 +198,7 @@ export default {
             this.selectedTag = id;
         },
         getPictureUrl(url) {
-            return url ? url.startsWith("http") ? url : "storage/" + url : '';
+            return url ? (url.startsWith("http") ? url : "storage/" + url) : "";
         },
     },
 
