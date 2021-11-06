@@ -5,6 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Designer extends Model
@@ -29,5 +30,10 @@ class Designer extends Model
     public function socialNetworks(): BelongsToMany
     {
         return $this->belongsToMany(SocialNetwork::class)->withPivot(['url'])->using(DesignerSocialNetwork::class);
+    }
+
+    public function portfolios() : HasMany
+    {
+        return $this->hasMany(Portfolio::class);
     }
 }

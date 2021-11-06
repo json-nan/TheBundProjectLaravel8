@@ -196,7 +196,7 @@ export default {
             this.selectedTag = id;
         },
         getPictureUrl(url) {
-            return url.startsWith("http") ? url : "storage/" + url;
+            return url ? url.startsWith("http") ? url : "storage/" + url : '';
         },
     },
 
