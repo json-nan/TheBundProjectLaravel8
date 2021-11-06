@@ -45,34 +45,33 @@
                         scrollbar-thumb-rounded-full
                         hover:scrollbar-thumb-accent
                         p-8
+                        flex
+                        gap-3
                     "
                 >
-                    <div class="flex gap-3">
-                        <Pill
-                            :bg-class="
-                                selectedTag === 0 ? 'bg-primary' : undefined
-                            "
-                            class="
-                                cursor-pointer
-                                hover:bg-accent
-                                transition
-                                duration-300
-                            "
-                            @click="changeDesigners(0)"
+                    <Pill
+                        :bg-class="selectedTag === 0 ? 'bg-primary' : undefined"
+                        class="
+                            cursor-pointer
+                            hover:bg-accent
+                            transition
+                            duration-300
+                            flex-shrink-0
+                        "
+                        @click="changeDesigners(0)"
+                    >
+                        <span class="text-neutral font-bold text-2xl mx-28"
+                            >Todos</span
                         >
-                            <span class="text-neutral font-bold text-2xl mx-28"
-                                >Todos</span
-                            >
-                        </Pill>
-                        <PillTag
-                            v-for="tag in tags"
-                            :key="tag.id"
-                            :selected="selectedTag"
-                            :tag="tag"
-                            v-on:click="changeDesigners($event)"
-                        >
-                        </PillTag>
-                    </div>
+                    </Pill>
+                    <PillTag
+                        v-for="tag in tags"
+                        :key="tag.id"
+                        :selected="selectedTag"
+                        :tag="tag"
+                        v-on:click="changeDesigners($event)"
+                    >
+                    </PillTag>
                 </div>
 
                 <div
