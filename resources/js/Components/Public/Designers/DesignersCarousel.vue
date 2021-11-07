@@ -9,8 +9,18 @@
                 :designer="selectedDesigner"
             ></designer-info-modal>
         </modal>
-        <div class="text-5xl font-bold py-5 px-20 text-gray-800">
-            Un vistazo rápido
+        <div
+            class="
+                text-2xl
+                sm:text-5xl
+                font-bold
+                py-5
+                px-5
+                sm:px-20
+                text-gray-800
+            "
+        >
+            Lo más destacado
         </div>
         <div class="w-full flex justify-center">
             <div class="w-full">
@@ -72,7 +82,17 @@
                 </swiper>
             </div>
         </div>
-        <div class="flex justify-center items-center text-4xl font-bold mt-4">
+        <div
+            class="
+                flex
+                justify-center
+                items-center
+                text-2xl
+                sm:text-4xl
+                font-bold
+                mt-4
+            "
+        >
             <Link
                 as="button"
                 class="

@@ -1,6 +1,15 @@
 <template>
     <div class="z-1 relative flex h-full overflow-hidden slider-container">
-        <swiper class="swiper" navigation :modules="modules" :loop="true">
+        <swiper
+            class="swiper"
+            navigation
+            :modules="modules"
+            :loop="true"
+            :autoplay="{
+                delay: 1750,
+                disableOnInteraction: false,
+            }"
+        >
             <swiper-slide class="">
                 <div class="relative flex">
                     <img
@@ -57,12 +66,14 @@
 </template>
 
 <script>
-import { Navigation } from "swiper";
+import { Navigation, Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/vue";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
+
+// install Swiper modules
 
 export default {
     name: "Carousel",
@@ -77,7 +88,7 @@ export default {
         return {
             onSwiper,
             onSlideChange,
-            modules: [Navigation],
+            modules: [Navigation, Autoplay],
         };
     },
 };

@@ -6,10 +6,10 @@
                     <img
                         src="images/bp/The-Bünd-Project-Imagotipo.svg"
                         alt=""
-                        class="w-4/12"
+                        class="w-full sm:w-4/12"
                     />
                 </div>
-                <div class="text-sm flex content-center">
+                <div class="text-lg sm:text-sm flex content-center">
                     <div>
                         The bund project es un colectivo creativo que engloba y
                         presenta generaciones de diseñadores industriales, con
