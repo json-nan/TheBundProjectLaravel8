@@ -4,17 +4,19 @@ namespace App\Http\Controllers;
 
 use App\Models\Workshop;
 use Illuminate\Http\Request;
+use Inertia\Inertia;
 
 class WorkshopController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
      */
     public function index()
     {
-        //
+        return Inertia::render('Rooms', [
+            'workshops' => Workshop::all()
+        ]);
     }
 
     /**

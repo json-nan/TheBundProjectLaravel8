@@ -73,9 +73,9 @@
                         duration-300
                         ease-in-out
                     "
-                    href="/workshops"
+                    href="/rooms"
                     type="button"
-                    >Workshops
+                    >Rooms
                 </Link>
             </div>
         </div>

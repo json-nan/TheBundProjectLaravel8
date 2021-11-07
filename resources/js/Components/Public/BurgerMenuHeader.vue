@@ -103,8 +103,8 @@ export default {
                     url: "/podcasts",
                 },
                 {
-                    label: "Workshops",
-                    url: "/workshops",
+                    label: "Rooms",
+                    url: "/rooms",
                 },
             ],
         };
