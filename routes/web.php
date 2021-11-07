@@ -25,6 +25,7 @@ Route::get('about-us', function () {
 });
 
 Route::get('designers', [\App\Http\Controllers\DesignerController::class, 'index']);
+Route::get('podcasts', [\App\Http\Controllers\PodcastController::class, 'index']);
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });

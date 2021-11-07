@@ -4,17 +4,19 @@ namespace App\Http\Controllers;
 
 use App\Models\Podcast;
 use Illuminate\Http\Request;
+use Inertia\Inertia;
 
 class PodcastController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(): \Inertia\Response
     {
-        //
+        return Inertia::render('Podcasts', [
+            'podcasts' => Podcast::with('links')->get()
+        ]);
     }
 
     /**
@@ -30,7 +32,7 @@ class PodcastController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
@@ -41,7 +43,7 @@ class PodcastController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Podcast  $podcast
+     * @param \App\Models\Podcast $podcast
      * @return \Illuminate\Http\Response
      */
     public function show(Podcast $podcast)
@@ -52,7 +54,7 @@ class PodcastController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Podcast  $podcast
+     * @param \App\Models\Podcast $podcast
      * @return \Illuminate\Http\Response
      */
     public function edit(Podcast $podcast)
@@ -63,8 +65,8 @@ class PodcastController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Podcast  $podcast
+     * @param \Illuminate\Http\Request $request
+     * @param \App\Models\Podcast $podcast
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, Podcast $podcast)
@@ -75,7 +77,7 @@ class PodcastController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Podcast  $podcast
+     * @param \App\Models\Podcast $podcast
      * @return \Illuminate\Http\Response
      */
     public function destroy(Podcast $podcast)
