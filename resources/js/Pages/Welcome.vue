@@ -4,6 +4,8 @@
     <div class="font-sans overflow-hidden relative">
         <div
             class="
+                hidden
+                sm:flex
                 absolute
                 -top-16
                 -right-16
@@ -19,9 +21,12 @@
                 src="/images/end/Sello Blanco.svg"
             />
         </div>
-        <div class="flex flex-col mx-auto gap-6">
+        <div class="flex flex-col mx-auto sm:gap-6">
             <Navbar />
-            <BurgerMenuHeader class="visible lg:hidden absolute">
+            <BurgerMenuHeader
+                class="visible lg:hidden inline sm:absolute"
+                :showTitle="false"
+            >
                 <template v-slot:page-title>Inicio</template>
             </BurgerMenuHeader>
             <Carousel />
