@@ -13,7 +13,7 @@
                 "
                 @click="isMenuOpen = true"
             >
-                <div class="flex text-neutral text-xl items-left">
+                <div class="flex text-neutral sm:hidden text-xl items-left">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="35"
