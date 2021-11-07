@@ -14,13 +14,16 @@
             "
         >
             <img
+                alt="Evolving new design"
                 class=""
                 src="/images/end/Sello Blanco.svg"
-                alt="Evolving new design"
             />
         </div>
         <div class="flex flex-col mx-auto gap-6">
             <Navbar />
+            <BurgerMenuHeader class="visible lg:hidden absolute">
+                <template v-slot:page-title>Inicio</template>
+            </BurgerMenuHeader>
             <Carousel />
             <DesignersCarousel :designers="designers"></DesignersCarousel>
             <Footer />
@@ -36,9 +39,13 @@ import Navbar from "../Components/Public/Navbar";
 import Carousel from "../Components/Public/Carousel";
 import Footer from "../Components/Public/Footer";
 import DesignersCarousel from "../Components/Public/Designers/DesignersCarousel";
+import ModalMenu from "../Components/Public/ModalMenu";
+import BurgerMenuHeader from "../Components/Public/BurgerMenuHeader";
 
 export default defineComponent({
     components: {
+        BurgerMenuHeader,
+        ModalMenu,
         Navbar,
         Head,
         Link,

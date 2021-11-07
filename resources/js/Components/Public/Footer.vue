@@ -1,6 +1,6 @@
 <template>
-    <footer class="footer-1 bg-primary p-12 text-neutral">
-        <div class="container mx-auto grid sm:grid-cols-2 gap-8">
+    <footer class="footer-1 bg-primary p-12 text-neutral mt-8">
+        <div class="container mx-auto grid grid-cols-2 gap-8">
             <div class="flex flex-col gap-4">
                 <div>
                     <img
