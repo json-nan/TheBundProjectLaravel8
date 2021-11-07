@@ -2,7 +2,17 @@
     <Head title="TheBundProject" />
 
     <div class="font-sans overflow-hidden relative">
-        <div class="absolute -top-16 -right-16 w-72 z-20 overflow-x-hidden">
+        <div
+            class="
+                absolute
+                -top-16
+                -right-16
+                w-72
+                z-0
+                sm:z-10
+                overflow-x-hidden
+            "
+        >
             <img
                 class=""
                 src="/images/end/Sello Blanco.svg"
