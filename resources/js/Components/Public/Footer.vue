@@ -1,5 +1,5 @@
 <template>
-    <footer class="footer-1 bg-primary p-12 text-neutral">
+    <footer class="footer-1 bg-primary p-12 text-neutral mt-8">
         <div class="container mx-auto grid grid-cols-2 gap-8">
             <div class="flex flex-col gap-4">
                 <div>
@@ -11,11 +11,12 @@
                 </div>
                 <div class="text-sm flex content-center">
                     <div>
-                        The bund project es un colectivo creativo que engloba y presenta
-                        generaciones de diseñadores industriales, con el objetivo de mostrar
-                        su trabajo y competencias a diferentes empresas o público
-                        interesado. The Bund Project incorpora todas las categorías del
-                        diseño en una sola plataforma
+                        The bund project es un colectivo creativo que engloba y
+                        presenta generaciones de diseñadores industriales, con
+                        el objetivo de mostrar su trabajo y competencias a
+                        diferentes empresas o público interesado. The Bund
+                        Project incorpora todas las categorías del diseño en una
+                        sola plataforma
                     </div>
                 </div>
             </div>
@@ -40,10 +41,8 @@
 
 <script>
 export default {
-    name: "Footer"
-}
+    name: "Footer",
+};
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

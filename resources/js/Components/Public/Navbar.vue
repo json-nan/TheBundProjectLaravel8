@@ -1,14 +1,5 @@
 <template>
-    <nav
-        class="
-            hidden
-            container
-            lg:grid lg:grid-cols-4
-            xl:grid-cols-5
-            z-20
-            absolute
-        "
-    >
+    <nav class="hidden container lg:grid lg:grid-cols-5 z-20 absolute">
         <div class="bg-primary justify-center items-center flex p-8">
             <div class="flex justify-center">
                 <img
@@ -18,10 +9,10 @@
                 />
             </div>
         </div>
-        <div class="col-span-2">
+        <div class="col-span-3">
             <div
                 class="
-                    grid grid-cols-3
+                    grid grid-cols-4
                     h-full
                     lg:text-xl
                     xl:text-2xl
@@ -58,7 +49,8 @@
                     >Conócenos
                 </Link>
 
-                <div
+                <Link
+                    as="button"
                     class="
                         flex
                         justify-center
@@ -66,11 +58,25 @@
                         hover:bg-secondary
                         duration-300
                         ease-in-out
-                        cursor-pointer
                     "
-                >
-                    Contenido
-                </div>
+                    href="/podcasts"
+                    type="button"
+                    >Podcasts
+                </Link>
+                <Link
+                    as="button"
+                    class="
+                        flex
+                        justify-center
+                        items-center
+                        hover:bg-secondary
+                        duration-300
+                        ease-in-out
+                    "
+                    href="/workshops"
+                    type="button"
+                    >Workshops
+                </Link>
             </div>
         </div>
         <div
@@ -83,7 +89,7 @@
                 2xl:justify-end
                 text-neutral text-sm
                 relative
-                xl:col-start-4
+                xl:col-start-5
             "
         >
             <div class="flex justify-center items-center">
