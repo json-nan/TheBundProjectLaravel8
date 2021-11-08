@@ -1,5 +1,5 @@
 <template>
-    <div class="grid grid-cols-7">
+    <div class="grid grid-cols-1 sm:grid-cols-7 mt-56 sm:mt-0">
         <div class="col-span-4">
             <img
                 :src="getPictureUrl(designer.profile_picture)"
@@ -8,7 +8,7 @@
             />
         </div>
         <div class="flex flex-col col-span-3 gap-4">
-            <div class="flex justify-end px-5 pt-5 gap-2">
+            <div class="flex sm:justify-end justify-center px-5 pt-5 gap-2">
                 <img
                     alt=""
                     class="w-10 bg-secondary p-1 rounded-xl"

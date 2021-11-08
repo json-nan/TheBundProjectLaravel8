@@ -25,7 +25,14 @@
             <div class="flex">
                 <div class="mx-auto max-w-screen-xl">
                     <div class="mx-auto">
-                        <div class="relative grid grid-cols-2 gap-8">
+                        <div
+                            class="
+                                relative
+                                grid grid-cols-1
+                                sm:grid-cols-2
+                                gap-8
+                            "
+                        >
                             <div
                                 class="
                                     grid grid-cols-1
@@ -33,7 +40,8 @@
                                     rounded-lg
                                     px-7
                                     py-6
-                                    gap-3
+                                    gap-8
+                                    sm:gap-3
                                     relative
                                 "
                                 @mouseenter="startFilter = true"
@@ -111,7 +119,8 @@
                             </div>
                             <div
                                 class="
-                                    top-10
+                                    top-0
+                                    sm:top-10
                                     grid grid-cols-1
                                     bg-accent
                                     rounded-lg
@@ -222,6 +231,7 @@
                             <div
                                 class="
                                     top-10
+                                    sm:top-10
                                     grid grid-cols-1
                                     bg-accent
                                     rounded-lg
