@@ -45,7 +45,10 @@
                     </div>
                     <!-- End Header -->
                     <!-- Content -->
-                    <div class="flex gap-8 flex-col mt-12">
+                    <div
+                        class="flex gap-8 flex-col mt-12"
+                        v-if="currentWorkshop?.name"
+                    >
                         <div>
                             <img
                                 alt=""
@@ -65,13 +68,19 @@
                             >
                         </div>
                     </div>
-                    <div class="text-3xl text-accent font-bold">
+                    <div
+                        class="text-3xl text-accent font-bold"
+                        v-if="currentWorkshop?.name"
+                    >
                         <span>{{ currentWorkshop.name }}</span>
                     </div>
-                    <div>
+                    <div v-if="currentWorkshop?.name">
                         <span>{{ currentWorkshop.description }}</span>
                     </div>
-                    <div class="flex justify-end gap-2">
+                    <div
+                        class="flex justify-end gap-2"
+                        v-if="currentWorkshop?.name"
+                    >
                         <a
                             v-for="link in currentWorkshop.links"
                             :href="link.url"
@@ -97,6 +106,7 @@
                         cursor-pointer
                         relative
                     "
+                    v-if="currentWorkshop?.name"
                 >
                     <div class="w-full relative flex rounded-md">
                         <img
@@ -318,7 +328,7 @@ export default {
         },
     },
     mounted() {
-        this.currentWorkshop = this.workshops?.[0];
+        this.currentWorkshop = this.workshops?.[0] || {};
     },
 };
 </script>
