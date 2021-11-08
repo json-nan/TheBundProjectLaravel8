@@ -17,6 +17,8 @@
                     justify-between
                     items-center
                     justify-center
+                    flex-col
+                    sm:flex-row
                 "
             >
                 <div class="flex flex-col p-20 max-w-3/4 gap-3 justify-center">
