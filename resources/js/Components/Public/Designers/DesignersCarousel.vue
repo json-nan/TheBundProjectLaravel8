@@ -48,7 +48,12 @@
                             "
                         >
                             <img
-                                :src="getPictureUrl(designer.profile_picture)"
+                                :src="
+                                    getPictureUrl(
+                                        designer.products_picture ||
+                                            designer.profile_picture
+                                    )
+                                "
                                 alt="Profile image"
                                 class="z-0"
                             />

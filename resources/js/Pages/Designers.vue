@@ -91,14 +91,17 @@
                             >
                                 <img
                                     :src="
-                                        getPictureUrl(designer.profile_picture)
+                                        getPictureUrl(
+                                            designer.products_picture ||
+                                                designer.profile_picture
+                                        )
                                     "
                                     alt="Profile image"
                                     class="z-0 min-h-full"
                                 />
                                 <div class="absolute top-2 left-2 z-10">
                                     <img
-                                        :src="getIconUrl(designer.logo_icon)"
+                                        :src="getIconBNUrl(designer.logo_icon)"
                                         alt=""
                                         class="w-20 h-20 rounded-3xl"
                                     />
@@ -189,11 +192,11 @@ export default {
         getPictureUrl(url) {
             return url ? (url.startsWith("http") ? url : "storage/" + url) : "";
         },
-        getIconUrl(url) {
+        getIconBNUrl(url) {
             return url
                 ? url.startsWith("http")
                     ? url
-                    : "storage/designers/logos/" + url
+                    : "storage/designers/logos/BN/" + url
                 : "";
         },
     },
