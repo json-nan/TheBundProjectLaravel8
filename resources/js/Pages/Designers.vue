@@ -98,7 +98,7 @@
                                 />
                                 <div class="absolute top-2 left-2 z-10">
                                     <img
-                                        :src="getPictureUrl(designer.logo_icon)"
+                                        :src="getIconUrl(designer.logo_icon)"
                                         alt=""
                                         class="w-20 h-20 rounded-3xl"
                                     />
@@ -188,6 +188,13 @@ export default {
         },
         getPictureUrl(url) {
             return url ? (url.startsWith("http") ? url : "storage/" + url) : "";
+        },
+        getIconUrl(url) {
+            return url
+                ? url.startsWith("http")
+                    ? url
+                    : "storage/designers/logos/" + url
+                : "";
         },
     },
 

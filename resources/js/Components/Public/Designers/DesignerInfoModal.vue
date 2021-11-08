@@ -77,6 +77,9 @@ export default {
     },
     methods: {
         getPictureUrl(url) {
+            if (!url) {
+                return "";
+            }
             return url.startsWith("http") ? url : "storage/" + url;
         },
     },
