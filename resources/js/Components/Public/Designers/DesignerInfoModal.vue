@@ -39,8 +39,7 @@
                     hover:scrollbar-thumb-secondary
                 "
             >
-                {{ designer.description }} {{ designer.description }}
-                {{ designer.description }} {{ designer.description }}
+                {{ designer.description }}
             </div>
             <div class="flex items-center justify-center pb-3 w-full">
                 <button
