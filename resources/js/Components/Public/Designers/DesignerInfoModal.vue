@@ -106,16 +106,16 @@ export default {
                 case "es":
                     fileName =
                         this.designer.portfolios.find((p) => p.lang === "es")
-                            .url ||
+                            ?.url ||
                         this.designer.portfolios.find((p) => p.lang === "en")
-                            .url;
+                            ?.url;
                     break;
                 case "en":
                     fileName =
                         this.designer.portfolios.find((p) => p.lang === "en")
-                            .url ||
+                            ?.url ||
                         this.designer.portfolios.find((p) => p.lang === "es")
-                            .url;
+                            ?.url;
                     break;
             }
 
