@@ -292,10 +292,10 @@ import { Navigation } from "swiper";
 
 export default {
     components: { YoutubePlayerModal, Modal, PagesLayout, Swiper, SwiperSlide },
-    name: "Rooms",
+    name: "Handrooms",
     data: () => {
         return {
-            pageTitle: "Rooms",
+            pageTitle: "Handrooms",
             showYoutubeModal: false,
             video: "",
             currentWorkshop: 0,

@@ -44,26 +44,6 @@
                             class="w-12 mr-3"
                             src="/images/social_networks/Blanco/Facebook White.svg"
                         />
-                        <img
-                            alt="Facebook"
-                            class="w-12 mr-3"
-                            src="/images/social_networks/Blanco/SoundCloud White.svg"
-                        />
-                        <img
-                            alt="Facebook"
-                            class="w-12 mr-3 mt-5 lg:mt-0"
-                            src="/images/social_networks/Blanco/Spotify White.svg"
-                        />
-                        <img
-                            alt="Facebook"
-                            class="w-12 mr-3 mt-5 lg:mt-0"
-                            src="/images/social_networks/Blanco/Twitter White.svg"
-                        />
-                        <img
-                            alt="Facebook"
-                            class="w-12 mr-3 mt-5 lg:mt-0"
-                            src="/images/social_networks/Blanco/Mail White.svg"
-                        />
                     </div>
                 </div>
             </div>

@@ -6,7 +6,7 @@
             :modules="modules"
             :loop="true"
             :autoplay="{
-                delay: 1750,
+                delay: 3500,
                 disableOnInteraction: false,
             }"
         >

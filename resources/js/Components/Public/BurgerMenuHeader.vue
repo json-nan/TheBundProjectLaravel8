@@ -111,7 +111,7 @@ export default {
                     url: "/podcasts",
                 },
                 {
-                    label: this.__("Rooms"),
+                    label: this.__("Handrooms"),
                     url: "/rooms",
                 },
             ],
