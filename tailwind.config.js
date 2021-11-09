@@ -48,7 +48,7 @@ module.exports = {
                 "3/4": "75%",
             },
             animation: {
-                "spin-slow": "spin 8s linear reverse infinite",
+                "spin-slow": "spin 10s linear reverse infinite",
             },
         },
     },
