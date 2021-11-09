@@ -23,16 +23,53 @@
             <div class="flex flex-col">
                 <div>
                     <div class="text-lg">Patrocinadores</div>
-                    <div>
+                    <div class="flex flex-row mt-2">
                         <img
-                            src="https://www.svgrepo.com/show/303143/microsoft-logo.svg"
+                            src="/images/sponsors/Coyote.svg"
                             alt=""
-                            class="w-36 -mt-8"
+                            class="w-36 mr-10"
+                        />
+                        <img
+                            src="/images/sponsors/Cuadro Menguante.svg"
+                            alt=""
+                            class="w-36"
                         />
                     </div>
                 </div>
-                <div class="flex justify-end gap-6">
+                <div class="flex justify-start sm:justify-end gap-6 mt-10 mb-5">
                     <div>Siguenos</div>
+                    <div class="grid grid-cols-3 lg:flex lg:flex-row mt-2">
+                        <img
+                            src="/images/social_networks/Blanco/Instagram White.svg"
+                            alt="Instagram"
+                            class="w-12 mr-3"
+                        />
+                        <img
+                            src="/images/social_networks/Blanco/Facebook White.svg"
+                            alt="Facebook"
+                            class="w-12 mr-3"
+                        />
+                        <img
+                            src="/images/social_networks/Blanco/SoundCloud White.svg"
+                            alt="Facebook"
+                            class="w-12 mr-3"
+                        />
+                        <img
+                            src="/images/social_networks/Blanco/Spotify White.svg"
+                            alt="Facebook"
+                            class="w-12 mr-3 mt-5 lg:mt-0"
+                        />
+                        <img
+                            src="/images/social_networks/Blanco/Twitter White.svg"
+                            alt="Facebook"
+                            class="w-12 mr-3 mt-5 lg:mt-0"
+                        />
+                        <img
+                            src="/images/social_networks/Blanco/Mail White.svg"
+                            alt="Facebook"
+                            class="w-12 mr-3 mt-5 lg:mt-0"
+                        />
+                    </div>
                 </div>
             </div>
         </div>
