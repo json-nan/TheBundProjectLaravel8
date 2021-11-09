@@ -4,7 +4,7 @@ return [
     'Designers' => 'Diseñadores',
     'About us' => 'Conócenos',
     'Podcasts' => 'Podcasts',
-    'Rooms' => 'Talleres',
+    'Handrooms' => 'Talleres',
     'Quick view' => 'Un vistazo rápido',
     'Show all' => 'Mostrar todos',
     'Homepage' => 'Inicio',
