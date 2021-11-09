@@ -13,6 +13,7 @@
                 z-0
                 sm:z-10
                 overflow-x-hidden
+                animate-spin-slow
             "
         >
             <img

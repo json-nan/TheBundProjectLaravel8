@@ -20,7 +20,7 @@
                     src="/images/social_networks/Blanco/Facebook White.svg"
                 />
             </div>
-            <div class="h-56 flex justify-center px-6">
+            <div class="h-52 flex justify-center px-6">
                 <img
                     :src="getPictureUrl(designer.brand_picture)"
                     alt=""
@@ -41,7 +41,7 @@
             >
                 {{ designer.description }}
             </div>
-            <div class="flex items-center justify-center pb-3 w-full">
+            <div class="flex items-center justify-center p-4 w-full">
                 <button
                     class="
                         w-10/12
