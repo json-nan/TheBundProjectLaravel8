@@ -4,7 +4,31 @@
         <div class="flex mt-16">
             <div class="mx-auto max-w-screen-xl">
                 <div class="mx-auto">
-                    <div class="relative grid grid-cols-1 sm:grid-cols-2 gap-8">
+                    <div
+                        class="
+                            relative
+                            grid grid-cols-1
+                            lg:grid-cols-2
+                            gap-8
+                            container
+                        "
+                    >
+                        <div
+                            class="
+                                absolute
+                                hidden
+                                w-full
+                                h-full
+                                lg:flex
+                                justify-center
+                                xl:mt-96
+                                lg:mt-72
+                            "
+                        >
+                            <div class="w-52 h-52 pb-6 z-40">
+                                <img src="/images/end/END D.svg" alt="" />
+                            </div>
+                        </div>
                         <div
                             class="
                                 grid grid-cols-1
@@ -27,7 +51,7 @@
                                     w-full
                                     bg-neutral bg-opacity-40
                                     backdrop-filter backdrop-blur-sm
-                                    z-50
+                                    z-30
                                 "
                             >
                                 <div
@@ -112,7 +136,7 @@
                                     h-1/2
                                     bottom-0
                                     w-full
-                                    z-50
+                                    z-30
                                     bg-gradient-to-t
                                     rounded-xl
                                 "
@@ -123,7 +147,7 @@
                                         left-0
                                         bottom-0
                                         text-neutral
-                                        ml-8
+                                        ml-16
                                         mb-8
                                         flex flex-col
                                     "
@@ -153,6 +177,12 @@
                                 rounded-lg
                                 gap-3
                                 relative
+                                md:max-h-[800px] md:max-w-3/4 md:mx-auto
+                                lg:ml-32 lg:max-h-[600px] lg:max-w-3/4
+                                overflow-hidden
+                                mt-20
+                                lg:mt-0
+                                z-50
                             "
                             @mouseenter="visionFilter = true"
                             @mouseleave="visionFilter = false"
@@ -211,6 +241,7 @@
                                 py-6
                                 gap-3
                                 relative
+                                max-h-[433px]
                             "
                             @mouseenter="newGenerationFilter = true"
                             @mouseleave="newGenerationFilter = false"
@@ -223,7 +254,7 @@
                                     w-full
                                     bg-neutral bg-opacity-40
                                     backdrop-filter backdrop-blur-sm
-                                    z-50
+                                    z-30
                                 "
                             >
                                 <div
