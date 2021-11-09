@@ -79,7 +79,7 @@
                 </div>
             </swiper-slide>
             <swiper-slide>
-                <div class="relative flex">
+                <div class="flex">
                     <img
                         src="/storage/homepage/02_COVER.jpg"
                         alt=""
@@ -147,7 +147,7 @@
                 </div>
             </swiper-slide>
             <swiper-slide>
-                <div class="relative flex">
+                <div class="flex">
                     <img
                         src="/storage/homepage/03_COVER.jpg"
                         alt=""
