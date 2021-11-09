@@ -1,5 +1,12 @@
 <template>
     <Head title="TheBundProject" />
+    <modal
+        :show="showDesignerModal"
+        maxWidth="3xl"
+        @close="toggleDesignerModal(false)"
+    >
+        <designer-info-modal :designer="selectedDesigner"></designer-info-modal>
+    </modal>
     <pages-layout :page-title="pageTitle">
         <div class="font-sans relative">
             <div class="flex flex-col mx-auto gap-6">
@@ -74,7 +81,9 @@
                                 sm:h-72 sm:w-72
                                 h-96
                                 w-96
+                                cursor-pointer
                             "
+                            @click="toggleDesignerModal(true, designer)"
                         >
                             <div
                                 class="
@@ -148,14 +157,25 @@ import Pill from "@/Components/Public/Designers/Pill";
 import PillTag from "../Components/Public/Designers/PillTag";
 import Footer from "../Components/Public/Footer";
 import PagesLayout from "../Layouts/PagesLayout";
+import Modal from "../Jetstream/Modal";
+import DesignerInfoModal from "../Components/Public/Designers/DesignerInfoModal";
 
 export default {
     name: "Designers",
-    components: { Footer, PillTag, Pill, Head, PagesLayout },
+    components: {
+        DesignerInfoModal,
+        Modal,
+        Footer,
+        PillTag,
+        Pill,
+        Head,
+        PagesLayout,
+    },
     data() {
         return {
             selectedTag: 0,
             pageTitle: "Diseñadores",
+            showDesignerModal: false,
         };
     },
 
@@ -184,6 +204,10 @@ export default {
         },
     },
     methods: {
+        toggleDesignerModal(show, designer = {}) {
+            this.selectedDesigner = designer;
+            this.showDesignerModal = show;
+        },
         changeDesigners(id) {
             this.selectedTag = id;
         },
