@@ -20,7 +20,7 @@
                 text-gray-800
             "
         >
-            Lo más destacado
+            Un vistazo rápido
         </div>
         <div class="w-full flex justify-center">
             <div class="w-full">
