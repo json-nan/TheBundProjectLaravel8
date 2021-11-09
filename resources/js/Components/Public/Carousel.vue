@@ -13,7 +13,7 @@
             <swiper-slide class="">
                 <div class="relative flex">
                     <img
-                        src="https://i.picsum.photos/id/652/1920/1080.jpg?hmac=LOlq3LJhW5-o8SVlXbNJ5J8OMvSw1DgvWzC6cJdmzZ0"
+                        src="/storage/homepage/01_COVER.png"
                         alt=""
                         class="w-full"
                     />
@@ -30,7 +30,7 @@
             <swiper-slide>
                 <div class="relative flex">
                     <img
-                        src="https://i.picsum.photos/id/8/1920/1080.jpg?hmac=ZWQsrAG-h-Ip98by6rfqjHRyvoEe1IKeeT2rbHCcoH4"
+                        src="/storage/homepage/02_COVER.jpg"
                         alt=""
                         class="w-full"
                     />
@@ -47,7 +47,7 @@
             <swiper-slide>
                 <div class="relative flex">
                     <img
-                        src="https://i.picsum.photos/id/277/1920/1080.jpg?hmac=NJd0HPJnJp1_n_X-9WCdFz9U9K1UAHgYAuFJgj0rZMU"
+                        src="/storage/homepage/03_COVER.jpg"
                         alt=""
                         class="w-full"
                     />
