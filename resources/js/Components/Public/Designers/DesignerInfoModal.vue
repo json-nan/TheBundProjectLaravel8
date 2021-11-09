@@ -24,7 +24,7 @@
                 <img
                     :src="getBrandPictureUrl(designer.brand_picture)"
                     alt=""
-                    class="w-full object-cover h-full"
+                    class="max-w-full h-full"
                 />
             </div>
             <div
