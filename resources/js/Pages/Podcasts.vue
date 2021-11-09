@@ -148,7 +148,7 @@
                 from-black
                 to-black
                 py-8
-                mt-6
+                mt-10
                 -mb-8
                 px-10
                 overflow-x-visible

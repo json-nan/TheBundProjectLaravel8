@@ -180,7 +180,16 @@
             </div>
         </div>
         <div
-            class="w-full bg-secondary py-8 mt-6 -mb-8 px-10 overflow-x-visible"
+            class="
+                w-full
+                bg-secondary
+                py-8
+                mt-6
+                -mb-8
+                px-10
+                overflow-x-visible
+                mt-10
+            "
         >
             <swiper
                 :breakpoints="breakpoints"
