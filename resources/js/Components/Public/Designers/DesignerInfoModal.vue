@@ -22,7 +22,7 @@
             </div>
             <div class="h-52 flex justify-center px-6">
                 <img
-                    :src="getPictureUrl(designer.brand_picture)"
+                    :src="getBrandPictureUrl(designer.brand_picture)"
                     alt=""
                     class="w-full object-cover h-full"
                 />
@@ -83,7 +83,13 @@ export default {
             }
             return url.startsWith("http") ? url : "storage/" + url;
         },
-
+        getBrandPictureUrl(url) {
+            return url
+                ? url.startsWith("http")
+                    ? url
+                    : "storage/designers/logos/color/" + url
+                : "";
+        },
         getDescription() {
             switch (this.$actualLang) {
                 case "es":
