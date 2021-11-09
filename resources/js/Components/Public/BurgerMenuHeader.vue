@@ -10,27 +10,35 @@
                     relative
                     flex flex-row
                     items-left
+                    relative
+                    cursor-pointer
                 "
                 @click="isMenuOpen = true"
             >
-                <div class="flex text-neutral sm:hidden text-xl items-left">
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="35"
-                        height="35"
-                        viewBox="0 0 50 50"
-                        style="fill: #fff"
-                    >
-                        <path
-                            d="M 5 8 A 2.0002 2.0002 0 1 0 5 12 L 45 12 A 2.0002 2.0002 0 1 0 45 8 L 5 8 z M 5 23 A 2.0002 2.0002 0 1 0 5 27 L 45 27 A 2.0002 2.0002 0 1 0 45 23 L 5 23 z M 5 38 A 2.0002 2.0002 0 1 0 5 42 L 45 42 A 2.0002 2.0002 0 1 0 45 38 L 5 38 z"
-                        ></path>
-                    </svg>
-                </div>
                 <img
                     alt=""
                     class="h-12 sm:max-h-full mx-auto"
                     src="/images/bp/The-Bünd-Project-Icono.svg"
                 />
+                <div
+                    class="
+                        text-neutral text-xl
+                        absolute
+                        bottom-3
+                        right-3
+                        sm:bottom-5 sm:right-5
+                    "
+                >
+                    <svg
+                        style="fill: #fff"
+                        height="20"
+                        viewBox="0 0 24 24"
+                        width="20"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path d="M21 12l-18 12v-24z" />
+                    </svg>
+                </div>
             </div>
 
             <div class="p-4 flex items-center gap-8" v-if="showTitle">

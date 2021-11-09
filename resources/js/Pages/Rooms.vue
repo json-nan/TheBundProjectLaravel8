@@ -168,8 +168,8 @@
                             w-full
                             rounded-md
                             -mt-2
-                            pt-4
-                            pb-2
+                            pt-6
+                            pb-4
                             px-3
                             bg-secondary
                             text-neutral

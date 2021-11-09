@@ -1,11 +1,55 @@
 <template>
     <Head title="TheBundProject" />
+    <modal
+        :show="showDesignerModal"
+        maxWidth="3xl"
+        @close="toggleDesignerModal(false)"
+    >
+        <designer-info-modal :designer="selectedDesigner"></designer-info-modal>
+    </modal>
     <pages-layout :page-title="pageTitle">
         <div class="font-sans relative">
             <div class="flex flex-col mx-auto gap-6">
                 <!--            <Navbar />-->
             </div>
-            <div class="flex justify-center items-center w-full">
+            <div class="flex justify-center items-center w-full flex-col">
+                <div
+                    class="
+                        max-w-full
+                        overflow-x-scroll
+                        scrollbar
+                        scrollbar-thumb-primary
+                        scrollbar-thumb-rounded-full
+                        hover:scrollbar-thumb-accent
+                        py-8
+                        flex
+                        gap-3
+                    "
+                >
+                    <Pill
+                        :bg-class="selectedTag === 0 ? 'bg-primary' : undefined"
+                        class="
+                            cursor-pointer
+                            hover:bg-accent
+                            transition
+                            duration-300
+                            flex-shrink-0
+                        "
+                        @click="changeDesigners(0)"
+                    >
+                        <span class="text-neutral font-bold text-2xl mx-28"
+                            >Todos</span
+                        >
+                    </Pill>
+                    <PillTag
+                        v-for="tag in tags"
+                        :key="tag.id"
+                        :selected="selectedTag"
+                        :tag="tag"
+                        v-on:click="changeDesigners($event)"
+                    >
+                    </PillTag>
+                </div>
                 <div
                     class="
                         flex
@@ -18,45 +62,6 @@
                 >
                     <div></div>
                     <div></div>
-                    <div
-                        class="
-                            max-w-full
-                            overflow-x-scroll
-                            scrollbar
-                            scrollbar-thumb-primary
-                            scrollbar-thumb-rounded-full
-                            hover:scrollbar-thumb-accent
-                            p-8
-                            flex
-                            gap-3
-                        "
-                    >
-                        <Pill
-                            :bg-class="
-                                selectedTag === 0 ? 'bg-primary' : undefined
-                            "
-                            class="
-                                cursor-pointer
-                                hover:bg-accent
-                                transition
-                                duration-300
-                                flex-shrink-0
-                            "
-                            @click="changeDesigners(0)"
-                        >
-                            <span class="text-neutral font-bold text-2xl mx-28"
-                                >Todos</span
-                            >
-                        </Pill>
-                        <PillTag
-                            v-for="tag in tags"
-                            :key="tag.id"
-                            :selected="selectedTag"
-                            :tag="tag"
-                            v-on:click="changeDesigners($event)"
-                        >
-                        </PillTag>
-                    </div>
 
                     <div
                         class="
@@ -76,7 +81,9 @@
                                 sm:h-72 sm:w-72
                                 h-96
                                 w-96
+                                cursor-pointer
                             "
+                            @click="toggleDesignerModal(true, designer)"
                         >
                             <div
                                 class="
@@ -103,7 +110,7 @@
                                     <img
                                         :src="getIconBNUrl(designer.logo_icon)"
                                         alt=""
-                                        class="w-20 h-20 rounded-3xl"
+                                        class="w-20 h-20 rounded-2xl"
                                     />
                                 </div>
 
@@ -150,14 +157,25 @@ import Pill from "@/Components/Public/Designers/Pill";
 import PillTag from "../Components/Public/Designers/PillTag";
 import Footer from "../Components/Public/Footer";
 import PagesLayout from "../Layouts/PagesLayout";
+import Modal from "../Jetstream/Modal";
+import DesignerInfoModal from "../Components/Public/Designers/DesignerInfoModal";
 
 export default {
     name: "Designers",
-    components: { Footer, PillTag, Pill, Head, PagesLayout },
+    components: {
+        DesignerInfoModal,
+        Modal,
+        Footer,
+        PillTag,
+        Pill,
+        Head,
+        PagesLayout,
+    },
     data() {
         return {
             selectedTag: 0,
             pageTitle: "Diseñadores",
+            showDesignerModal: false,
         };
     },
 
@@ -186,6 +204,10 @@ export default {
         },
     },
     methods: {
+        toggleDesignerModal(show, designer = {}) {
+            this.selectedDesigner = designer;
+            this.showDesignerModal = show;
+        },
         changeDesigners(id) {
             this.selectedTag = id;
         },

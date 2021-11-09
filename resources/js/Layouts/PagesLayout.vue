@@ -2,7 +2,24 @@
     <BurgerMenuHeader>
         <template v-slot:page-title>{{ pageTitle }}</template>
     </BurgerMenuHeader>
-    <slot></slot>
+    <div
+        class="
+            hidden
+            sm:flex
+            absolute
+            -top-16
+            -right-16
+            w-72
+            z-0
+            overflow-x-hidden
+            animate-spin-slow
+        "
+    >
+        <img alt="Evolving new design" src="/images/end/Sello Blanco.svg" />
+    </div>
+    <div>
+        <slot></slot>
+    </div>
     <Footer></Footer>
 </template>
 
