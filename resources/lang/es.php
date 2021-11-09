@@ -21,4 +21,5 @@ return [
     'Do it by yourself' => 'Hazlo tú mismo',
     'Designers' => 'Diseñadores',
     'Play Now' => 'Reproducir Ahora',
+    'Portfolio' => 'Portafolio'
 ];

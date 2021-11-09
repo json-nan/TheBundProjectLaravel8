@@ -17,7 +17,7 @@ use Inertia\Inertia;
 Route::middleware(\App\Http\Middleware\LocationMiddleware::class)->group(function () {
     Route::get('/', function () {
         return Inertia::render('Welcome', [
-            'designers' => \App\Models\Designer::inRandomOrder()->limit(10)->get()
+            'designers' => \App\Models\Designer::inRandomOrder()->with('portfolios')->limit(10)->get()
         ]);
     });
 

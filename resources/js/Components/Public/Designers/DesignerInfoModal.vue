@@ -22,9 +22,9 @@
             </div>
             <div class="h-52 flex justify-center px-6">
                 <img
-                    :src="getPictureUrl(designer.brand_picture)"
+                    :src="getBrandPictureUrl(designer.brand_picture)"
                     alt=""
-                    class="w-full object-cover h-full"
+                    class="max-w-full h-full"
                 />
             </div>
             <div
@@ -39,10 +39,12 @@
                     hover:scrollbar-thumb-secondary
                 "
             >
-                {{ designer.description }}
+                {{ getDescription() }}
             </div>
             <div class="flex items-center justify-center p-4 w-full">
-                <button
+                <a
+                    target="_blank"
+                    :href="getPorfolioUrl()"
                     class="
                         w-10/12
                         bg-secondary
@@ -57,9 +59,9 @@
                     "
                 >
                     <div class="flex justify-center items-center text-2xl">
-                        <span>Portafolio</span>
+                        <span>{{ __("Portfolio") }}</span>
                     </div>
-                </button>
+                </a>
             </div>
         </div>
     </div>
@@ -81,6 +83,61 @@ export default {
             }
             return url.startsWith("http") ? url : "storage/" + url;
         },
+        getBrandPictureUrl(url) {
+            return url
+                ? url.startsWith("http")
+                    ? url
+                    : "storage/designers/logos/color/" + url
+                : "";
+        },
+        getDescription() {
+            switch (this.$actualLang) {
+                case "es":
+                    return (
+                        this.designer.description ||
+                        this.designer.english_description
+                    );
+                    break;
+                case "en":
+                    return (
+                        this.designer.english_description ||
+                        this.designer.description
+                    );
+                    break;
+            }
+        },
+        getPorfolioUrl() {
+            let fileName;
+            switch (this.$actualLang) {
+                case "es":
+                    fileName =
+                        this.designer.portfolios.find((p) => p.lang === "es")
+                            ?.url ||
+                        this.designer.portfolios.find((p) => p.lang === "en")
+                            ?.url;
+                    break;
+                case "en":
+                    fileName =
+                        this.designer.portfolios.find((p) => p.lang === "en")
+                            ?.url ||
+                        this.designer.portfolios.find((p) => p.lang === "es")
+                            ?.url;
+                    break;
+            }
+
+            if (!fileName) {
+                return "";
+            }
+
+            if (fileName.startsWith("http")) {
+                return fileName;
+            }
+
+            return `/storage/designers/portfolios/${this.$actualLang}/${fileName}`;
+        },
+    },
+    mounted() {
+        console.log(this.designer);
     },
 };
 </script>
