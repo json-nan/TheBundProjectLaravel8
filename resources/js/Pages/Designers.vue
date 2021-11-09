@@ -103,7 +103,7 @@
                                     <img
                                         :src="getIconBNUrl(designer.logo_icon)"
                                         alt=""
-                                        class="w-20 h-20 rounded-3xl"
+                                        class="w-20 h-20 rounded-2xl"
                                     />
                                 </div>
 
