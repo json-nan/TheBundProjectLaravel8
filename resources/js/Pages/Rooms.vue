@@ -3,10 +3,13 @@
     <PagesLayout :page-title="pageTitle">
         <modal
             :show="showYoutubeModal"
-            maxWidth="3xl"
+            maxWidth="4xl"
             @close="showYoutubeModal = false"
         >
-            <youtube-player-modal></youtube-player-modal>
+            <youtube-player-modal
+                :src="currentWorkshop.url"
+                :title="currentWorkshop.name"
+            ></youtube-player-modal>
         </modal>
 
         <div class="w-full justify-center flex">
@@ -107,6 +110,7 @@
                         relative
                     "
                     v-if="currentWorkshop?.name"
+                    @click="showYoutubeModal = true"
                 >
                     <div class="w-full relative flex rounded-md">
                         <img

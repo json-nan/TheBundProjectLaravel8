@@ -3,10 +3,10 @@
         :src="`https://www.youtube.com/embed/${videoId}`"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
-        frameborder="0"
+        frameborder="1"
         :height="height"
         :title="title"
-        :width="width"
+        class="w-full"
     ></iframe>
 </template>
 
@@ -20,11 +20,7 @@ export default {
         },
         height: {
             type: Number,
-            default: 720,
-        },
-        width: {
-            type: Number,
-            default: 1280,
+            default: 600,
         },
         title: {
             type: String,
@@ -32,7 +28,7 @@ export default {
         },
     },
     computed: {
-        videoId: () => {
+        videoId() {
             return this.src.split("/").pop().split("=").pop();
         },
     },

@@ -3,10 +3,13 @@
     <PagesLayout :page-title="pageTitle">
         <modal
             :show="showYoutubeModal"
-            maxWidth="3xl"
+            maxWidth="4xl"
             @close="showYoutubeModal = false"
         >
-            <youtube-player-modal></youtube-player-modal>
+            <youtube-player-modal
+                :src="currentPodcast.url"
+                :title="currentPodcast.name"
+            ></youtube-player-modal>
         </modal>
 
         <div class="w-full justify-center flex">
@@ -64,6 +67,7 @@
                         cursor-pointer
                         relative
                     "
+                    @click="showYoutubeModal = true"
                 >
                     <div class="w-full relative flex rounded-md">
                         <img
