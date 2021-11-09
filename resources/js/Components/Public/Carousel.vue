@@ -6,12 +6,12 @@
             :modules="modules"
             :loop="true"
             :autoplay="{
-                delay: 3500,
+                delay: 2500,
                 disableOnInteraction: false,
             }"
         >
             <swiper-slide class="">
-                <div class="relative flex">
+                <div class="flex">
                     <img
                         src="/storage/homepage/01_COVER.png"
                         alt=""
@@ -23,12 +23,63 @@
                             profile-filter
                             min-h-full min-w-full
                             z-10
+                            hidden
+                            sm:flex
+                            items-end
+                            justify-between
+                            p-8
                         "
-                    ></div>
+                    >
+                        <div class="flex flex-col text-white pl-10 2xl:pl-14">
+                            <div
+                                class="
+                                    font-extrabold
+                                    text-5xl
+                                    lg:text-7xl
+                                    2xl:text-9xl
+                                "
+                            >
+                                Presentando
+                            </div>
+                            <div
+                                class="
+                                    font-extralight
+                                    text-4xl
+                                    lg:text-6xl
+                                    2xl:text-8xl
+                                "
+                            >
+                                Evolving New Design
+                            </div>
+                        </div>
+                        <div>
+                            <Link
+                                as="button"
+                                class="
+                                    bg-secondary
+                                    py-3
+                                    px-10
+                                    rounded-full
+                                    text-neutral
+                                    flex
+                                    items-center
+                                    justify-center
+                                    w-auto
+                                    gap-4
+                                "
+                                href="/designers"
+                                type="button"
+                            >
+                                <div class="flex justify-center items-center">
+                                    <span>{{ __("About Us") }}</span>
+                                </div>
+                            </Link>
+                        </div>
+                    </div>
                 </div>
             </swiper-slide>
             <swiper-slide>
-                <div class="relative flex">
+                <div class="flex">
                     <img
                         src="/storage/homepage/02_COVER.jpg"
                         alt=""
@@ -40,12 +91,63 @@
                             profile-filter
                             min-h-full min-w-full
                             z-10
+                            hidden
+                            sm:flex
+                            items-end
+                            justify-between
+                            p-8
                         "
-                    ></div>
+                    >
+                        <div class="flex flex-col text-white pl-10 2xl:pl-14">
+                            <div
+                                class="
+                                    font-extrabold
+                                    text-5xl
+                                    lg:text-7xl
+                                    2xl:text-9xl
+                                "
+                            >
+                                Mutualismo
+                            </div>
+                            <div
+                                class="
+                                    font-extralight
+                                    text-4xl
+                                    lg:text-6xl
+                                    2xl:text-8xl
+                                "
+                            >
+                                Ya disponible episodio 01
+                            </div>
+                        </div>
+                        <div>
+                            <Link
+                                as="button"
+                                class="
+                                    bg-secondary
+                                    py-3
+                                    px-10
+                                    rounded-full
+                                    text-neutral
+                                    flex
+                                    items-center
+                                    justify-center
+                                    w-auto
+                                    gap-4
+                                "
+                                href="/designers"
+                                type="button"
+                            >
+                                <div class="flex justify-center items-center">
+                                    <span>{{ __("Play Now") }}</span>
+                                </div>
+                            </Link>
+                        </div>
+                    </div>
                 </div>
             </swiper-slide>
             <swiper-slide>
-                <div class="relative flex">
+                <div class="flex">
                     <img
                         src="/storage/homepage/03_COVER.jpg"
                         alt=""
@@ -57,8 +159,59 @@
                             profile-filter
                             min-h-full min-w-full
                             z-10
+                            hidden
+                            sm:flex
+                            items-end
+                            justify-between
+                            p-8
                         "
-                    ></div>
+                    >
+                        <div class="flex flex-col text-white pl-10 2xl:pl-14">
+                            <div
+                                class="
+                                    font-extrabold
+                                    text-5xl
+                                    lg:text-7xl
+                                    2xl:text-9xl
+                                "
+                            >
+                                Patronaje
+                            </div>
+                            <div
+                                class="
+                                    font-extralight
+                                    text-4xl
+                                    lg:text-6xl
+                                    2xl:text-8xl
+                                "
+                            >
+                                Videotutorial ya disponible
+                            </div>
+                        </div>
+                        <div>
+                            <Link
+                                as="button"
+                                class="
+                                    bg-secondary
+                                    py-3
+                                    px-10
+                                    rounded-full
+                                    text-neutral
+                                    flex
+                                    items-center
+                                    justify-center
+                                    w-auto
+                                    gap-4
+                                "
+                                href="/designers"
+                                type="button"
+                            >
+                                <div class="flex justify-center items-center">
+                                    <span>{{ __("Play Now") }}</span>
+                                </div>
+                            </Link>
+                        </div>
+                    </div>
                 </div>
             </swiper-slide>
         </swiper>
@@ -72,12 +225,13 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
+import { Link } from "@inertiajs/inertia-vue3";
 
 // install Swiper modules
 
 export default {
     name: "Carousel",
-    components: { Swiper, SwiperSlide },
+    components: { Swiper, SwiperSlide, Link },
     setup() {
         const onSwiper = (swiper) => {
             console.log(swiper);

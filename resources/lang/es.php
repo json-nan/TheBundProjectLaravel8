@@ -19,5 +19,7 @@ return [
     'RENASCENCE' => 'RENACIMIENTO',
     'Contact us' => 'Contáctanos',
     'Do it by yourself' => 'Hazlo tú mismo',
-    'Portfolio' => 'Portafolio',
+    'Designers' => 'Diseñadores',
+    'Play Now' => 'Reproducir Ahora',
+    'Portfolio' => 'Portafolio'
 ];
