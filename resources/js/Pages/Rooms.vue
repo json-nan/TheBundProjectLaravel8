@@ -36,14 +36,10 @@
                     <!-- Header -->
                     <div class="flex flex-col gap-4">
                         <p class="text-primary font-bold">
-                            En este espacio podrás encontrar diferentes videos
-                            donde aprenderás técnicas, procesos y tecnologías
-                            relacionadas al diseño industrial que tú también
-                            puedes incorporar en tus diseños. Escoge el room que
-                            te interese para aprender más sobre el tema.
+                            {{ __("large-texts.rooms.description") }}
                         </p>
-                        <h1 class="text-6xl font-bold text-accent">
-                            Házlo tú mismo
+                        <h1 class="text-6xl font-bold text-accent uppercase">
+                            {{ __("Do it by yourself") }}
                         </h1>
                     </div>
                     <!-- End Header -->

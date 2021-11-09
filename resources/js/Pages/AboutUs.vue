@@ -26,7 +26,7 @@
                             "
                         >
                             <div class="w-52 h-52 pb-6 z-40">
-                                <img src="/images/end/END D.svg" alt="" />
+                                <img alt="" src="/images/end/END D.svg" />
                             </div>
                         </div>
                         <div
@@ -65,7 +65,7 @@
                                         mb-8
                                     "
                                 >
-                                    <span>El inicio</span>
+                                    <span>{{ __("The beginning") }}</span>
                                 </div>
                             </div>
                             <div class="flex items-center justify-between">
@@ -79,16 +79,9 @@
                                 </div>
                             </div>
                             <div class="flex justify-between mx-1 text-sm">
-                                <span class="">R</span>
-                                <span class="">E</span>
-                                <span class="">S</span>
-                                <span class="">O</span>
-                                <span class="">N</span>
-                                <span class="">A</span>
-                                <span class="">N</span>
-                                <span class="">C</span>
-                                <span class="">I</span>
-                                <span class="">A</span>
+                                <span v-for="letter in __('RESONANCE')">{{
+                                    letter
+                                }}</span>
                             </div>
                             <div
                                 class="
@@ -99,17 +92,10 @@
                                     pb-6
                                 "
                             >
-                                <span
-                                    >Somos diseñadores apasionados por la
-                                    innovación y la incorporación de nuevas
-                                    tecnologías en nuestros productos que ayuden
-                                    a mejorar la experiencia del usuario y que
-                                    además, sean productos visualmente
-                                    atractivos. Somos resonancia porque hacemos
-                                    que nuestros productos logren más de lo que
-                                    se proponen: nos ayudamos mutuamente en
-                                    diferentes areas del diseño y eso nos hace
-                                    únicos.
+                                <span>
+                                    {{
+                                        __("large-texts.about-us.the-beginning")
+                                    }}
                                 </span>
                             </div>
                         </div>
@@ -127,10 +113,6 @@
                             @mouseleave="missionFilter = false"
                         >
                             <div
-                                v-bind:class="{
-                                    'from-secondary': missionFilter,
-                                    'from-gray-800': !missionFilter,
-                                }"
                                 class="
                                     absolute
                                     h-1/2
@@ -140,6 +122,10 @@
                                     bg-gradient-to-t
                                     rounded-xl
                                 "
+                                v-bind:class="{
+                                    'from-secondary': missionFilter,
+                                    'from-gray-800': !missionFilter,
+                                }"
                             >
                                 <div
                                     class="
@@ -152,14 +138,12 @@
                                         flex flex-col
                                     "
                                 >
-                                    <span v-if="missionFilter"
-                                        >Motivar e inspirar a los Diseñadores
-                                        industriales a abrir nuevos
-                                        caminos</span
-                                    >
-                                    <span class="text-6xl font-extrabold"
-                                        >Misión</span
-                                    >
+                                    <span v-if="missionFilter">{{
+                                        __("large-texts.about-us.mission")
+                                    }}</span>
+                                    <span class="text-6xl font-extrabold">{{
+                                        __("Mission")
+                                    }}</span>
                                 </div>
                             </div>
                             <div class="relative">
@@ -213,13 +197,12 @@
                                         flex flex-col
                                     "
                                 >
-                                    <span v-if="visionFilter"
-                                        >“Ser el referente de Diseño Industrial
-                                        regionalmente</span
-                                    >
-                                    <span class="text-6xl font-extrabold"
-                                        >Visión</span
-                                    >
+                                    <span v-if="visionFilter">
+                                        {{ __("large-texts.about-us.vision") }}
+                                    </span>
+                                    <span class="text-6xl font-extrabold">{{
+                                        __("vision")
+                                    }}</span>
                                 </div>
                             </div>
                             <div class="relative">
@@ -268,7 +251,7 @@
                                         mb-8
                                     "
                                 >
-                                    <span>La nueva generación</span>
+                                    <span>{{ __("The new generation") }}</span>
                                 </div>
                             </div>
                             <div class="flex items-center justify-between">
@@ -282,18 +265,11 @@
                                 </div>
                             </div>
                             <div class="flex justify-between mx-1 text-sm">
-                                <span class="">R</span>
-                                <span class="">E</span>
-                                <span class="">N</span>
-                                <span class="">A</span>
-                                <span class="">C</span>
-                                <span class="">I</span>
-                                <span class="">M</span>
-                                <span class="">I</span>
-                                <span class="">E</span>
-                                <span class="">N</span>
-                                <span class="">T</span>
-                                <span class="">O</span>
+                                <span
+                                    v-for="letter in __('RENASCENCE')"
+                                    class=""
+                                    >{{ letter }}</span
+                                >
                             </div>
                             <div
                                 class="
@@ -304,16 +280,8 @@
                                     pb-6
                                 "
                             >
-                                <span
-                                    >Somos END, la generación que marca un antes
-                                    y un después en la transición a una nueva
-                                    etapa en la que compartimos parte de nuestra
-                                    creatividad con la comunidad. Presentamos
-                                    ideas revolucionarias, cambiamos el concepto
-                                    del diseño industrial en el país y
-                                    posicionamos la profesión del diseñador
-                                    industrial como un referente más allá de las
-                                    fronteras.
+                                <span>
+                                    {{ __("large-texts.about-us.renascence") }}
                                 </span>
                             </div>
                         </div>
@@ -323,9 +291,9 @@
         </div>
         <div class="flex flex-col mt-20 justify-center items-center gap-2">
             <div>
-                <span class="text-secondary text-3xl font-bold"
-                    >CONTÁCTANOS</span
-                >
+                <span class="text-secondary text-3xl font-bold uppercase">{{
+                    __("Contact us")
+                }}</span>
             </div>
             <div class="flex gap-2">
                 <img
@@ -371,7 +339,7 @@ export default {
             missionFilter: false,
             visionFilter: false,
             newGenerationFilter: false,
-            pageTitle: "Quiénes sómos",
+            pageTitle: this.__("About us"),
         };
     },
     methods: {},

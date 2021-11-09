@@ -1,4 +1,5 @@
 const mix = require("laravel-mix");
+require("laravel-vue-lang/mix");
 
 /*
  |--------------------------------------------------------------------------
@@ -17,7 +18,9 @@ mix.js("resources/js/app.js", "public/js")
         require("postcss-import"),
         require("tailwindcss"),
     ])
-    .webpackConfig(require("./webpack.config")).disableNotifications();
+    .webpackConfig(require("./webpack.config"))
+    .disableNotifications()
+    .lang();
 
 if (mix.inProduction()) {
     mix.version();

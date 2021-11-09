@@ -37,9 +37,9 @@
                         "
                         @click="changeDesigners(0)"
                     >
-                        <span class="text-neutral font-bold text-2xl mx-28"
-                            >Todos</span
-                        >
+                        <span class="text-neutral font-bold text-2xl mx-28">{{
+                            __("All")
+                        }}</span>
                     </Pill>
                     <PillTag
                         v-for="tag in tags"
@@ -174,7 +174,7 @@ export default {
     data() {
         return {
             selectedTag: 0,
-            pageTitle: "Diseñadores",
+            pageTitle: this.__("Designers"),
             showDesignerModal: false,
         };
     },

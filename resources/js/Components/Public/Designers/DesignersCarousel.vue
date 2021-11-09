@@ -20,7 +20,7 @@
                 text-gray-800
             "
         >
-            Un vistazo rápido
+            {{ __("Quick view") }}
         </div>
         <div class="w-full flex justify-center">
             <div class="w-full">
@@ -116,7 +116,7 @@
                 type="button"
             >
                 <div class="flex justify-center items-center">
-                    <span>Mostrar todos</span>
+                    <span>{{ __("Show all") }}</span>
                 </div>
                 <div class="w-6 flex justify-center items-center">
                     <img alt="Arrow" src="/images/others/Flecha.svg" />

@@ -31,7 +31,7 @@
                     "
                     href="/designers"
                     type="button"
-                    >Diseñadores
+                    >{{ __("Designers") }}
                 </Link>
 
                 <Link
@@ -46,7 +46,8 @@
                     "
                     href="/about-us"
                     type="button"
-                    >Conócenos
+                >
+                    {{ __("About us") }}
                 </Link>
 
                 <Link
@@ -61,7 +62,8 @@
                     "
                     href="/podcasts"
                     type="button"
-                    >Podcasts
+                >
+                    {{ __("Podcasts") }}
                 </Link>
                 <Link
                     as="button"
@@ -75,7 +77,8 @@
                     "
                     href="/rooms"
                     type="button"
-                    >Rooms
+                >
+                    {{ __("Rooms") }}
                 </Link>
             </div>
         </div>
@@ -92,16 +95,45 @@
                 xl:col-start-5
             "
         >
-            <div class="flex justify-center items-center">
-                <span class="bg-neutral bg-opacity-30 px-3 py-0.5 rounded-full"
+            <a
+                as="button"
+                class="flex justify-center items-center group"
+                href="/change-lang/es"
+                type="button"
+            >
+                <span
+                    class="
+                        group-hover:bg-secondary
+                        duration-300
+                        ease-in-out
+                        bg-neutral bg-opacity-30
+                        px-3
+                        py-0.5
+                        rounded-full
+                    "
                     >Esp</span
                 >
-            </div>
-            <div class="flex justify-center items-center">
-                <span class="bg-neutral bg-opacity-30 px-3 py-0.5 rounded-full"
+            </a>
+
+            <a
+                as="button"
+                class="flex justify-center items-center group"
+                href="/change-lang/en"
+                type="button"
+            >
+                <span
+                    class="
+                        group-hover:bg-secondary
+                        duration-300
+                        ease-in-out
+                        bg-neutral bg-opacity-30
+                        px-3
+                        py-0.5
+                        rounded-full
+                    "
                     >Eng</span
                 >
-            </div>
+            </a>
         </div>
     </nav>
 </template>
@@ -113,6 +145,7 @@ export default {
     components: {
         Link,
     },
+    methods: {},
 };
 </script>
 

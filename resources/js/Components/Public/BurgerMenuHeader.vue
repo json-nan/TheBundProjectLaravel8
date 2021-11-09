@@ -90,28 +90,28 @@ import ModalMenuItem from "./ModalMenuItem";
 export default {
     name: "BurgerMenuHeader",
     components: { ModalMenuItem, ModalMenu, Modal },
-    data: () => {
+    data() {
         return {
             isMenuOpen: false,
             menuItems: [
                 {
-                    label: "Inicio",
+                    label: this.__("Homepage"),
                     url: "/",
                 },
                 {
-                    label: "Diseñadores",
+                    label: this.__("Designers"),
                     url: "/designers",
                 },
                 {
-                    label: "Conócenos",
+                    label: this.__("About us"),
                     url: "/about-us",
                 },
                 {
-                    label: "Podcasts",
+                    label: this.__("Podcasts"),
                     url: "/podcasts",
                 },
                 {
-                    label: "Rooms",
+                    label: this.__("Rooms"),
                     url: "/rooms",
                 },
             ],

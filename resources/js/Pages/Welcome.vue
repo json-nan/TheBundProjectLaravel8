@@ -28,7 +28,7 @@
                 class="visible lg:hidden inline sm:absolute"
                 :showTitle="false"
             >
-                <template v-slot:page-title>Inicio</template>
+                <template v-slot:page-title>{{ __("Homepage") }}</template>
             </BurgerMenuHeader>
             <Carousel />
             <DesignersCarousel :designers="designers"></DesignersCarousel>
