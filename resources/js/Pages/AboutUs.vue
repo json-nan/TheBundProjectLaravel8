@@ -103,8 +103,9 @@
                             @mouseleave="missionFilter = false"
                         >
                             <div
-                                :class="{
-                                    'from-secondary h-3/4': missionFilter,
+                                v-bind:class="{
+                                    'from-secondary': missionFilter,
+                                    'from-gray-800': !missionFilter,
                                 }"
                                 class="
                                     absolute
@@ -113,7 +114,6 @@
                                     w-full
                                     z-50
                                     bg-gradient-to-t
-                                    from-gray-800
                                     rounded-xl
                                 "
                             >
@@ -142,7 +142,7 @@
                                 <img
                                     alt=""
                                     class="object-cover w-full rounded-lg"
-                                    src="https://picsum.photos/id/661/536/354"
+                                    src="/images/abous_us/Misión.jpg"
                                 />
                             </div>
                         </div>
@@ -196,7 +196,7 @@
                                 <img
                                     alt=""
                                     class="object-cover w-full rounded-lg"
-                                    src="https://picsum.photos/id/661/536/354"
+                                    src="/images/abous_us/Visión.jpg"
                                 />
                             </div>
                         </div>
