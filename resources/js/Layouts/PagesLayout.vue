@@ -10,12 +10,16 @@
             -top-16
             -right-16
             w-72
+            h-72
             z-0
             overflow-x-hidden
             animate-spin-slow
         "
     >
-        <img alt="Evolving new design" src="/images/end/Sello Blanco.svg" />
+        <img
+            alt="Evolving new design"
+            src="/images/end/Sello con opacidad.svg"
+        />
     </div>
     <div>
         <slot></slot>

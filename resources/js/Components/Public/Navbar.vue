@@ -96,10 +96,8 @@
             "
         >
             <a
-                as="button"
                 class="flex justify-center items-center group"
                 href="/change-lang/es"
-                type="button"
             >
                 <span
                     class="
@@ -116,10 +114,8 @@
             </a>
 
             <a
-                as="button"
                 class="flex justify-center items-center group"
                 href="/change-lang/en"
-                type="button"
             >
                 <span
                     class="

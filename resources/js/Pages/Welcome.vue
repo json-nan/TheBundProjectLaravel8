@@ -10,6 +10,7 @@
                 -top-16
                 -right-16
                 w-72
+                h-72
                 z-0
                 sm:z-10
                 overflow-x-hidden
