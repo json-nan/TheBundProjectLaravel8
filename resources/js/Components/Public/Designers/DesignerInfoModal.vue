@@ -133,7 +133,9 @@ export default {
                 return fileName;
             }
 
-            return `/storage/designers/portfolios/${this.$actualLang}/${fileName}`;
+            return `/storage/designers/portfolios/${
+                fileName.split("_").pop().split(".")[0]
+            }/${fileName}`;
         },
     },
     mounted() {
