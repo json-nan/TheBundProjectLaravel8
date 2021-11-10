@@ -15,7 +15,7 @@
                     <img
                         src="/storage/homepage/01_COVER.png"
                         alt=""
-                        class="w-full"
+                        class="w-full -mt-10"
                     />
                     <div
                         class="
@@ -83,7 +83,7 @@
                     <img
                         src="/storage/homepage/02_COVER.jpg"
                         alt=""
-                        class="w-full"
+                        class="w-full -mt-10"
                     />
                     <div
                         class="
@@ -151,7 +151,7 @@
                     <img
                         src="/storage/homepage/03_COVER.jpg"
                         alt=""
-                        class="w-full"
+                        class="w-full -mt-10"
                     />
                     <div
                         class="

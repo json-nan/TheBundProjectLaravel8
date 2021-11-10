@@ -1,6 +1,16 @@
 <template>
     <footer class="footer-1 bg-primary p-12 text-neutral mt-8">
-        <div class="container mx-auto grid sm:grid-cols-2 gap-8">
+        <div
+            class="
+                container
+                2xl:max-w-full
+                mx-auto
+                grid
+                sm:grid-cols-2
+                gap-8
+                2xl:gap-40
+            "
+        >
             <div class="flex flex-col gap-4">
                 <div>
                     <img
@@ -17,7 +27,7 @@
             </div>
             <div class="flex flex-col">
                 <div>
-                    <div class="text-3xl">{{ __("Sponsors") }}</div>
+                    <div class="2xl:ml-56 text-3xl">{{ __("Sponsors") }}</div>
                     <div
                         class="
                             flex flex-row
@@ -29,6 +39,7 @@
                             scrollbar-thumb-secondary
                             scrollbar-thin
                             py-6
+                            2xl:justify-end
                         "
                     >
                         <img
