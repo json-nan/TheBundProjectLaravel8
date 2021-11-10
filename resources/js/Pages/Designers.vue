@@ -12,6 +12,7 @@
             <div class="flex justify-center items-center w-full flex-col">
                 <div class="w-full px-8 flex justify-end">
                     <a
+                        target="_blank"
                         href="https://2020.thebundproject.com"
                         class="
                             rounded-full
