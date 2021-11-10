@@ -26,7 +26,29 @@
                                 inset-0
                                 backdrop-blur
                             "
-                        ></div>
+                        >
+                            <div
+                                class="
+                                    hidden
+                                    sm:flex
+                                    absolute
+                                    -bottom-36
+                                    -right-36
+                                    w-[40rem]
+                                    h-[40rem]
+                                    z-0
+                                    sm:z-10
+                                    overflow-x-hidden
+                                    animate-spin-slow
+                                "
+                            >
+                                <img
+                                    alt="Evolving new design"
+                                    class=""
+                                    src="/images/end/Sello Blanco.svg"
+                                />
+                            </div>
+                        </div>
                     </div>
                 </transition>
 
@@ -43,6 +65,7 @@
                     "
                 >
                     <slot v-if="show"></slot>
+                    <div class="absolute right-0">hello world</div>
                 </div>
             </div>
         </transition>
