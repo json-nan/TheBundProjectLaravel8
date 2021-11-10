@@ -21,11 +21,9 @@
                                 h-full
                                 lg:flex
                                 justify-center
-                                xl:mt-96
-                                lg:mt-72
                             "
                         >
-                            <div class="w-52 h-52 pb-6 z-40">
+                            <div class="w-52 h-52 pb-6 z-40 xl:mt-96 lg:mt-72">
                                 <img alt="" src="/images/end/END D.svg" />
                             </div>
                         </div>
@@ -296,20 +294,33 @@
                 }}</span>
             </div>
             <div class="flex gap-2">
-                <img
-                    class="w-10 bg-primary p-1 rounded-xl cursor-pointer"
-                    src="/images/social_networks/Blanco/Mail White.svg"
-                />
-                <img
-                    alt=""
-                    class="w-10 bg-primary p-1 rounded-xl cursor-pointer"
-                    src="/images/social_networks/Blanco/Instagram White.svg"
-                />
-                <img
-                    alt=""
-                    class="w-10 bg-primary p-1 rounded-xl cursor-pointer"
-                    src="/images/social_networks/Blanco/Facebook White.svg"
-                />
+                <a href="mailto: abc@example.com">
+                    <img
+                        class="w-10 bg-primary p-1 rounded-xl cursor-pointer"
+                        src="/images/social_networks/Blanco/Mail White.svg"
+                    />
+                </a>
+
+                <a
+                    href="https://www.instagram.com/bund.project/"
+                    target="_blank"
+                >
+                    <img
+                        alt=""
+                        class="w-10 bg-primary p-1 rounded-xl cursor-pointer"
+                        src="/images/social_networks/Blanco/Instagram White.svg"
+                    />
+                </a>
+                <a
+                    href="https://www.facebook.com/TheBundProject"
+                    target="_blank"
+                >
+                    <img
+                        alt=""
+                        class="w-10 bg-primary p-1 rounded-xl cursor-pointer"
+                        src="/images/social_networks/Blanco/Facebook White.svg"
+                    />
+                </a>
             </div>
         </div>
     </pages-layout>
