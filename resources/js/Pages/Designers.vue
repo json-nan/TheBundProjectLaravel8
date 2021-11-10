@@ -9,10 +9,28 @@
     </modal>
     <pages-layout :page-title="pageTitle">
         <div class="font-sans relative">
-            <div class="flex flex-col mx-auto gap-6">
-                <!--            <Navbar />-->
-            </div>
             <div class="flex justify-center items-center w-full flex-col">
+                <div class="w-full px-8 flex justify-end">
+                    <a
+                        href="https://2020.thebundproject.com"
+                        class="
+                            rounded-full
+                            hidden
+                            sm:inline
+                            cursor-default
+                            flex-shrink-0
+                            px-4
+                            2xl:mx-40
+                            py-2
+                            border-4 border-primary
+                            cursor-pointer
+                        "
+                    >
+                        <span class="text-primary font-bold text-xl">
+                            {{ __("RESONANCE") }} 2020</span
+                        >
+                    </a>
+                </div>
                 <div
                     class="
                         max-w-full
