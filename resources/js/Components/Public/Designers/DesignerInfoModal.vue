@@ -1,11 +1,17 @@
 <template>
-    <div class="grid grid-cols-1 sm:grid-cols-7 mt-56 sm:mt-0">
+    <div class="grid grid-cols-1 sm:grid-cols-7 mt-56 sm:mt-0 relative">
         <div class="col-span-4">
             <img
                 :src="getPictureUrl(designer.profile_picture)"
                 alt=""
                 class="rounded-3xl object-cover h-full"
             />
+        </div>
+        <div class="absolute z-40 flex flex-col bottom-0 left-0 p-6">
+            <span class="text-neutral text-5xl font-bold">{{
+                designer.name
+            }}</span>
+            <span class="text-neutral text-3xl">{{ designer.brand_name }}</span>
         </div>
         <div class="flex flex-col col-span-3 gap-4">
             <div class="flex sm:justify-end justify-center px-5 pt-5 gap-2">
