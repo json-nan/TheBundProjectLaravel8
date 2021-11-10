@@ -12,6 +12,7 @@
                 <a
                     v-for="socialNetwork in designer.social_networks"
                     :href="socialNetwork.pivot.url"
+                    target="_blank"
                 >
                     <img
                         :src="getIconUrl(socialNetwork.slug)"

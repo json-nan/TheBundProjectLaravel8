@@ -67,7 +67,7 @@
                                     w-auto
                                     gap-4
                                 "
-                                href="/designers"
+                                href="/about-us"
                                 type="button"
                             >
                                 <div class="flex justify-center items-center">
@@ -135,7 +135,7 @@
                                     w-auto
                                     gap-4
                                 "
-                                href="/designers"
+                                href="/podcasts"
                                 type="button"
                             >
                                 <div class="flex justify-center items-center">
@@ -203,7 +203,7 @@
                                     w-auto
                                     gap-4
                                 "
-                                href="/designers"
+                                href="/rooms"
                                 type="button"
                             >
                                 <div class="flex justify-center items-center">
