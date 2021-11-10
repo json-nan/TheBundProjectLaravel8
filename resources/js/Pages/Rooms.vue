@@ -127,7 +127,7 @@
                             "
                         >
                             <span class="text-4xl font-bold">
-                                Workshop
+                                Handroom
                                 {{ getParsedWorkshopId(currentWorkshop.id) }}
                             </span>
                             <span class="text-xl font-bold">
@@ -266,7 +266,7 @@
                                     >
                                 </div>
 
-                                <span class=""> Workshop</span>
+                                <span class="">Handroom</span>
                             </div>
                             <div class="text-primary text-xl font-bold">
                                 <span>

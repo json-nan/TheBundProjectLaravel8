@@ -294,7 +294,7 @@
                 }}</span>
             </div>
             <div class="flex gap-2">
-                <a href="mailto: abc@example.com">
+                <a href="mailto: thebund.p@gmail.com">
                     <img
                         class="w-10 bg-primary p-1 rounded-xl cursor-pointer"
                         src="/images/social_networks/Blanco/Mail White.svg"
