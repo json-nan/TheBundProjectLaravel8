@@ -6,18 +6,19 @@
                     w-full
                     sm:w-32 sm:h-32
                     bg-primary
-                    p-8
+                    sm:p-6
                     relative
                     flex flex-row
-                    items-left
+                    items-center
                     relative
                     cursor-pointer
+                    justify-center
                 "
                 @click="isMenuOpen = true"
             >
                 <img
                     alt=""
-                    class="h-12 sm:max-h-full mx-auto"
+                    class="h-12 sm:h-auto sm:max-h-full mx-auto"
                     src="/images/bp/The-Bünd-Project-Icono.svg"
                 />
                 <div
@@ -26,14 +27,14 @@
                         absolute
                         bottom-3
                         right-3
-                        sm:bottom-5 sm:right-5
+                        sm:bottom-3 sm:right-3
                     "
                 >
                     <svg
                         style="fill: #fff"
-                        height="20"
+                        height="15"
                         viewBox="0 0 24 24"
-                        width="20"
+                        width="15"
                         xmlns="http://www.w3.org/2000/svg"
                     >
                         <path d="M21 12l-18 12v-24z" />
