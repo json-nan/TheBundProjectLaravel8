@@ -18,7 +18,7 @@
                         max-w-full
                         overflow-x-scroll
                         scrollbar
-                        scrollbar-thumb-primary
+                        scrollbar-thumb-gray-200
                         scrollbar-thumb-rounded-full
                         hover:scrollbar-thumb-accent
                         scrollbar-thin
