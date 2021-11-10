@@ -1,15 +1,6 @@
 <template>
     <div class="z-1 relative flex h-full overflow-hidden slider-container">
-        <swiper
-            class="swiper"
-            navigation
-            :modules="modules"
-            :loop="true"
-            :autoplay="{
-                delay: 3500,
-                disableOnInteraction: false,
-            }"
-        >
+        <swiper class="swiper" navigation :modules="modules" :loop="true">
             <swiper-slide class="">
                 <div class="flex">
                     <img
@@ -28,7 +19,7 @@
                             items-end
                             justify-between
                             p-8
-                            mb-8
+                            xl:p-28
                         "
                     >
                         <div class="flex flex-col text-white pl-10 2xl:pl-14">
@@ -48,7 +39,6 @@
                                     text-4xl
                                     lg:text-6xl
                                     2xl:text-8xl
-                                    mr-4
                                 "
                             >
                                 Evolving New Design
@@ -61,6 +51,7 @@
                                     bg-secondary
                                     py-3
                                     px-10
+                                    xl:py-5 xl:px-16
                                     rounded-full
                                     text-neutral
                                     flex
@@ -68,6 +59,8 @@
                                     justify-center
                                     w-auto
                                     gap-4
+                                    mr-20
+                                    xl:text-2xl
                                 "
                                 href="/about-us"
                                 type="button"
@@ -98,7 +91,7 @@
                             items-end
                             justify-between
                             p-8
-                            mb-8
+                            xl:p-28
                         "
                     >
                         <div class="flex flex-col text-white pl-10 2xl:pl-14">
@@ -128,6 +121,8 @@
                             <Link
                                 as="button"
                                 class="
+                                    mr-20
+                                    xl:text-2xl xl:py-5 xl:px-16
                                     bg-secondary
                                     py-3
                                     px-10
@@ -168,7 +163,7 @@
                             items-end
                             justify-between
                             p-8
-                            mb-8
+                            xl:p-28
                         "
                     >
                         <div class="flex flex-col text-white pl-10 2xl:pl-14">
@@ -198,6 +193,8 @@
                             <Link
                                 as="button"
                                 class="
+                                    mr-20
+                                    xl:text-2xl xl:py-5 xl:px-16
                                     bg-secondary
                                     py-3
                                     px-10
