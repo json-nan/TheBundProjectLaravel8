@@ -9,7 +9,7 @@
                         src="images/bp/The-Bünd-Project-Imagotipo.svg"
                     />
                 </div>
-                <div class="text-lg sm:text-sm flex content-center">
+                <div class="text-lg sm:text-lg flex content-center">
                     <div>
                         {{ __("large-texts.footer.description") }}
                     </div>
@@ -17,17 +17,40 @@
             </div>
             <div class="flex flex-col">
                 <div>
-                    <div class="text-lg">{{ __("Sponsors") }}</div>
-                    <div class="flex flex-row mt-2">
+                    <div class="text-3xl">{{ __("Sponsors") }}</div>
+                    <div
+                        class="
+                            flex flex-row
+                            mt-2
+                            overflow-x-scroll
+                            gap-8
+                            scrollbar
+                            scrollbar-thumb-rounded
+                            scrollbar-thumb-secondary
+                            scrollbar-thin
+                            py-6
+                            justify-center
+                        "
+                    >
                         <img
                             alt=""
-                            class="w-36 mr-10"
+                            class="w-36"
                             src="/images/sponsors/Coyote.svg"
                         />
                         <img
                             alt=""
                             class="w-36"
                             src="/images/sponsors/Cuadro Menguante.svg"
+                        />
+                        <img
+                            alt=""
+                            class="w-36"
+                            src="/images/sponsors/Centro de Reproducción_Logo.svg"
+                        />
+                        <img
+                            alt=""
+                            class="w-36"
+                            src="/images/sponsors/Lero_logo.svg"
                         />
                     </div>
                 </div>
