@@ -29,7 +29,6 @@
                             scrollbar-thumb-secondary
                             scrollbar-thin
                             py-6
-                            justify-center
                         "
                     >
                         <img
