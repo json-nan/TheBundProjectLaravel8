@@ -17,7 +17,7 @@ class DesignerController extends Controller
     {
         return Inertia::render('Designers', [
             'tags' => Tag::all(),
-            'designers' => Designer::with(['tags', 'portfolios'])->inRandomOrder()->get()
+            'designers' => Designer::with(['tags', 'portfolios', 'socialNetworks'])->inRandomOrder()->get()
         ]);
     }
 

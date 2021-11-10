@@ -9,16 +9,16 @@
         </div>
         <div class="flex flex-col col-span-3 gap-4">
             <div class="flex sm:justify-end justify-center px-5 pt-5 gap-2">
-                <img
-                    alt=""
-                    class="w-10 bg-secondary p-1 rounded-xl"
-                    src="/images/social_networks/Blanco/Instagram White.svg"
-                />
-                <img
-                    alt=""
-                    class="w-10 bg-secondary p-1 rounded-xl"
-                    src="/images/social_networks/Blanco/Facebook White.svg"
-                />
+                <a
+                    v-for="socialNetwork in designer.social_networks"
+                    :href="socialNetwork.pivot.url"
+                >
+                    <img
+                        :src="getIconUrl(socialNetwork.slug)"
+                        alt="Social Network"
+                        class="w-10 h-10 bg-secondary p-1 rounded-lg"
+                    />
+                </a>
             </div>
             <div class="h-52 flex justify-center px-6">
                 <img
@@ -43,7 +43,6 @@
             </div>
             <div class="flex items-center justify-center p-4 w-full">
                 <a
-                    target="_blank"
                     :href="getPorfolioUrl()"
                     class="
                         w-10/12
@@ -57,6 +56,7 @@
                         w-auto
                         gap-4
                     "
+                    target="_blank"
                 >
                     <div class="flex justify-center items-center text-2xl">
                         <span>{{ __("Portfolio") }}</span>
@@ -136,6 +136,22 @@ export default {
             return `/storage/designers/portfolios/${
                 fileName.split("_").pop().split(".")[0]
             }/${fileName}`;
+        },
+        getIconUrl(socialNetwork) {
+            switch (socialNetwork) {
+                case "facebook":
+                    return "/images/social_networks/Blanco/Facebook White.svg";
+                    break;
+                case "instagram":
+                    return "/images/social_networks/Blanco/Instagram White.svg";
+                    break;
+                case "behance":
+                    return "/images/social_networks/Blanco/Behance White.svg";
+                    break;
+                default:
+                    return "/images/social_networks/Blanco/Facebook White.svg";
+                    break;
+            }
         },
     },
     mounted() {
