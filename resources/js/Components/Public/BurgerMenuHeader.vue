@@ -112,7 +112,7 @@ export default {
                     url: "/podcasts",
                 },
                 {
-                    label: this.__("Handrooms"),
+                    label: "Rooms",
                     url: "/rooms",
                 },
             ],

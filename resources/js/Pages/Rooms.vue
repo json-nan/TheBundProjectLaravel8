@@ -1,5 +1,5 @@
 <template>
-    <Head title="TheBundProject" />
+    <Head :title="__('Rooms')" />
     <PagesLayout :page-title="pageTitle">
         <modal
             :show="showYoutubeModal"
@@ -291,11 +291,18 @@ import YoutubePlayerModal from "../Components/Public/YoutubePlayerModal";
 import { Navigation } from "swiper";
 
 export default {
-    components: { YoutubePlayerModal, Modal, PagesLayout, Swiper, SwiperSlide },
+    components: {
+        YoutubePlayerModal,
+        Modal,
+        PagesLayout,
+        Swiper,
+        SwiperSlide,
+        Head,
+    },
     name: "Handrooms",
     data: () => {
         return {
-            pageTitle: "Handrooms",
+            pageTitle: "Handmade room",
             showYoutubeModal: false,
             video: "",
             currentWorkshop: 0,

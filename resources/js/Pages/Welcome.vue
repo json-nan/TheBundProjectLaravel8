@@ -1,5 +1,5 @@
 <template>
-    <Head title="TheBundProject" />
+    <Head :title="__('Homepage')" />
 
     <div class="font-sans overflow-hidden relative">
         <div

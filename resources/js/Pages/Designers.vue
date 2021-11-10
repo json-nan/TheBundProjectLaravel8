@@ -1,5 +1,5 @@
 <template>
-    <Head title="TheBundProject" />
+    <Head :title="__('Designers')" />
     <modal
         :show="showDesignerModal"
         maxWidth="3xl"
@@ -15,6 +15,7 @@
                         target="_blank"
                         href="https://2020.thebundproject.com"
                         class="
+                            bg-white
                             rounded-full
                             hidden
                             sm:inline

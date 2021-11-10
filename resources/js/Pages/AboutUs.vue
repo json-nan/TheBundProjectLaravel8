@@ -1,5 +1,5 @@
 <template>
-    <Head title="TheBundProject" />
+    <Head :title="__('About us')" />
     <pages-layout :page-title="pageTitle">
         <div class="flex mt-16">
             <div class="mx-auto max-w-screen-xl">
@@ -199,7 +199,7 @@
                                         {{ __("large-texts.about-us.vision") }}
                                     </span>
                                     <span class="text-6xl font-extrabold">{{
-                                        __("vision")
+                                        __("Vision")
                                     }}</span>
                                 </div>
                             </div>

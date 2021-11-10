@@ -12,14 +12,13 @@ return [
     'Follow us' => 'Síguenos',
     'All' => 'Todos',
     'The beginning' => 'El inicio',
-    'Mission' => 'Mision',
+    'Mission' => 'Misión',
     'The new generation' => 'La nueva generación',
     'Vision' => 'Visión',
     'RESONANCE' => 'RESONANCIA',
     'RENASCENCE' => 'RENACIMIENTO',
     'Contact us' => 'Contáctanos',
     'Do it by yourself' => 'Hazlo tú mismo',
-    'Designers' => 'Diseñadores',
     'Play Now' => 'Reproducir Ahora',
     'Portfolio' => 'Portafolio'
 ];
