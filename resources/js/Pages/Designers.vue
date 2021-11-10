@@ -27,6 +27,11 @@
                     "
                 >
                     <Pill
+                        bg-class="bg-transparent"
+                        class="hidden sm:flex cursor-default flex-shrink-0 w-48"
+                    >
+                    </Pill>
+                    <Pill
                         :bg-class="selectedTag === 0 ? 'bg-primary' : undefined"
                         class="
                             cursor-pointer

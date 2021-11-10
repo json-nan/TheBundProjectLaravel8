@@ -57,6 +57,13 @@
                                 alt="Profile image"
                                 class="z-0"
                             />
+                            <div class="absolute top-2 left-2 z-10">
+                                <img
+                                    :src="getIconBNUrl(designer.logo_icon)"
+                                    alt=""
+                                    class="w-20 h-20 rounded-2xl"
+                                />
+                            </div>
                             <div
                                 class="
                                     absolute
@@ -194,6 +201,13 @@ export default {
         },
         getPictureUrl(url) {
             return url.startsWith("http") ? url : "storage/" + url;
+        },
+        getIconBNUrl(url) {
+            return url
+                ? url.startsWith("http")
+                    ? url
+                    : "storage/designers/logos/BN/" + url
+                : "";
         },
     },
 };
