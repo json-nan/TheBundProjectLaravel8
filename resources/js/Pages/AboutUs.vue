@@ -303,7 +303,7 @@
                 <img
                     alt=""
                     class="w-10 bg-primary p-1 rounded-xl cursor-pointer"
-                    src="/images/social_networks/Blanco/Instagram white.svg"
+                    src="/images/social_networks/Blanco/Instagram White.svg"
                 />
                 <img
                     alt=""

@@ -54,19 +54,35 @@
                         />
                     </div>
                 </div>
-                <div class="flex justify-start sm:justify-end gap-6 mt-10 mb-5">
-                    <div>{{ __("Follow us") }}</div>
+                <div
+                    class="
+                        flex
+                        justify-start
+                        sm:justify-end
+                        gap-6
+                        mt-10
+                        mb-5
+                        items-center
+                    "
+                >
+                    <div>
+                        <span class="text-2xl">{{ __("Follow us") }}</span>
+                    </div>
                     <div class="grid grid-cols-3 lg:flex lg:flex-row mt-2">
-                        <img
-                            alt="Instagram"
-                            class="w-12 mr-3"
-                            src="/images/social_networks/Blanco/Instagram White.svg"
-                        />
-                        <img
-                            alt="Facebook"
-                            class="w-12 mr-3"
-                            src="/images/social_networks/Blanco/Facebook White.svg"
-                        />
+                        <a href="https://www.instagram.com/bund.project/">
+                            <img
+                                alt="Instagram"
+                                class="w-12 mr-3"
+                                src="/images/social_networks/Blanco/Instagram White.svg"
+                            />
+                        </a>
+                        <a href="https://www.facebook.com/TheBundProject">
+                            <img
+                                alt="Facebook"
+                                class="w-12 mr-3"
+                                src="/images/social_networks/Blanco/Facebook White.svg"
+                            />
+                        </a>
                     </div>
                 </div>
             </div>
