@@ -21,6 +21,7 @@
                         scrollbar-thumb-primary
                         scrollbar-thumb-rounded-full
                         hover:scrollbar-thumb-accent
+                        scrollbar-thin
                         py-8
                         flex
                         gap-3

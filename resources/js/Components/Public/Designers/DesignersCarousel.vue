@@ -57,7 +57,7 @@
                                 alt="Profile image"
                                 class="z-0"
                             />
-                            <div class="absolute top-2 left-2 z-10">
+                            <div class="absolute top-2 left-2 z-20">
                                 <img
                                     :src="getIconBNUrl(designer.logo_icon)"
                                     alt=""
