@@ -28,6 +28,7 @@
                             items-end
                             justify-between
                             p-8
+                            mb-8
                         "
                     >
                         <div class="flex flex-col text-white pl-10 2xl:pl-14">
@@ -47,6 +48,7 @@
                                     text-4xl
                                     lg:text-6xl
                                     2xl:text-8xl
+                                    mr-4
                                 "
                             >
                                 Evolving New Design
@@ -96,6 +98,7 @@
                             items-end
                             justify-between
                             p-8
+                            mb-8
                         "
                     >
                         <div class="flex flex-col text-white pl-10 2xl:pl-14">
@@ -115,6 +118,7 @@
                                     text-4xl
                                     lg:text-6xl
                                     2xl:text-8xl
+                                    mr-4
                                 "
                             >
                                 Ya disponible episodio 01
@@ -164,6 +168,7 @@
                             items-end
                             justify-between
                             p-8
+                            mb-8
                         "
                     >
                         <div class="flex flex-col text-white pl-10 2xl:pl-14">
@@ -183,6 +188,7 @@
                                     text-4xl
                                     lg:text-6xl
                                     2xl:text-8xl
+                                    mr-4
                                 "
                             >
                                 Videotutorial ya disponible
