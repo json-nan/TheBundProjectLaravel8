@@ -17,7 +17,11 @@
             <div class="flex sm:justify-end justify-center px-5 pt-5 gap-2">
                 <a
                     v-for="socialNetwork in designer.social_networks"
-                    :href="socialNetwork.pivot.url"
+                    :href="
+                        socialNetwork.slug === 'email'
+                            ? 'mailto: ' + socialNetwork.pivot.url
+                            : socialNetwork.pivot.url
+                    "
                     target="_blank"
                 >
                     <img
@@ -155,8 +159,17 @@ export default {
                 case "behance":
                     return "/images/social_networks/Blanco/Behance White.svg";
                     break;
+                case "twitter":
+                    return "/images/social_networks/Blanco/Twitter White.svg";
+                    break;
+                case "linkedin":
+                    return "/images/social_networks/Blanco/Linkedin White.svg";
+                    break;
+                case "email":
+                    return "/images/social_networks/Blanco/Mail White.svg";
+                    break;
                 default:
-                    return "/images/social_networks/Blanco/Facebook White.svg";
+                    return "/images/social_networks/Blanco/ArrowRight.svg";
                     break;
             }
         },
