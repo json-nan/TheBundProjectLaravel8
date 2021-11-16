@@ -1,7 +1,7 @@
 <?php
 return [
     "footer" => [
-        "description" => "The Bund Project is a creative collective that encompasses generations of industrial
+        "description" => "The Bünd Project is a creative collective that encompasses generations of industrial
         designers, with the aim of showing their work and skills to different companies or interested public.
         The Bund Project incorporates all categories of design on a single platform."
     ],

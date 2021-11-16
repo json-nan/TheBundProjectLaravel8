@@ -1,7 +1,7 @@
 <?php
 return [
     'footer' => [
-        "description" => "The Bund Project es un colectivo creativo que engloba generaciones
+        "description" => "The Bünd Project es un colectivo creativo que engloba generaciones
         de diseñadores industriales, con el objetivo de mostrar su trabajo y competencias a diferentes empresas o
         público interesado. The Bund Project incorpora todas las categorías del diseño en una sola plataforma."
     ],
