@@ -62,6 +62,11 @@
                             class="w-36"
                             src="/images/sponsors/Lero_logo.svg"
                         />
+                        <img
+                            alt=""
+                            class="w-36"
+                            src="/images/sponsors/Logo_DEMPAQUE2.svg"
+                        />
                     </div>
                 </div>
                 <div
